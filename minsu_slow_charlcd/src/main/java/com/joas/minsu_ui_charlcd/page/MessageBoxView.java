@@ -20,9 +20,6 @@ import com.joas.minsu_ui_charlcd.UIFlowManager;
 import com.joas.utils.TimeoutHandler;
 import com.joas.utils.TimeoutTimer;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
 public class MessageBoxView extends FrameLayout {
     TimeoutTimer timer = null;
     Activity mainActivity;

@@ -11,9 +11,7 @@ package com.joas.minsu_ui_charlcd;
 import android.app.AlarmManager;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Environment;
 import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -23,15 +21,12 @@ import com.joas.hw.dsp2.DSPRxData2;
 import com.joas.hw.dsp2.DSPTxData2;
 import com.joas.hw.rfid.RfidReader;
 import com.joas.hw.rfid.RfidReaderListener;
-
 import com.joas.hw.rfid.RfidReaderSehan;
-
 import com.joas.metercertviewer.IMeterAidlInterface;
+import com.joas.minsu_ui_charlcd.ChargeData;
 import com.joas.minsu_ui_charlcd.R;
 import com.joas.minsu_ui_charlcd.page.PageEvent;
 import com.joas.minsu_ui_charlcd.page.PageID;
-
-import com.joas.minsu_ui_charlcd.ChargeData;
 import com.joas.utils.LogWrapper;
 import com.joas.utils.LogWrapperListener;
 import com.joas.utils.LogWrapperMsg;
@@ -39,11 +34,8 @@ import com.joas.utils.TimeoutHandler;
 import com.joas.utils.TimeoutTimer;
 import com.joas.utils.WatchDogTimer;
 
-import java.net.URI;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.Timer;
-import java.util.TimerTask;
 import java.util.Vector;
 
 public class UIFlowManager implements RfidReaderListener, DSPControl2Listener,

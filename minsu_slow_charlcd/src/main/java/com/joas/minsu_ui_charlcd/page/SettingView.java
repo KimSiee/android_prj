@@ -30,9 +30,6 @@ import com.joas.utils.RemoteUpdater;
 import com.joas.utils.TimeoutHandler;
 import com.joas.utils.TimeoutTimer;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
 public class SettingView extends LinearLayout implements PageActivateListener {
     UIFlowManager flowManager;
     Activity mainActivity;

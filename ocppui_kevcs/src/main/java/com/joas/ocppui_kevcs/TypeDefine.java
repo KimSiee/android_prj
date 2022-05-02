@@ -2,7 +2,7 @@
  * Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
  * Unauthorized copying of this file, via any medium is strictly prohibited
  * Proprietary and confidential
- * Written by Sungchul Choi <scchoi@joas.co.kr>, 19. 3. 13 오후 3:50
+ * Written by Sungchul Choi <scchoi@joas.co.kr>, 22. 5. 2. 오후 5:46
  *
  */
 
@@ -21,8 +21,8 @@ public class TypeDefine {
 //    public static final String SW_VER = "v0.1.6";
 //    public static final String SW_RELEASE_DATE = "2022.03.10";
 
-    public static final String MODEL_NAME = "JC-9000S";
-    public static final String SW_VER = "v0.1.1";
+    public static final String MODEL_NAME = "JC-92C1-7-0P";
+    public static final String SW_VER = "v0.0.1";
     public static final String SW_RELEASE_DATE = "2022.04.27";
 
     public static final int CP_TYPE_SLOW_AC     = 0x02;
