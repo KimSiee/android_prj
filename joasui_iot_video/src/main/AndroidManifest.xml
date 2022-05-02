@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 17. 12. 19 오후 4:35
+  ~
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.joas.joasui_iot_video.ui">
+
+    <application
+        android:label="SmartCharger">
+        <activity
+            android:name=".IOTVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="SmartCharger"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

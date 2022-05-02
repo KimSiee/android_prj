@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 17. 12. 6 오후 4:25
+  ~
+  -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="125dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="1142dp"
+            android:layout_height="594dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/info_frame1">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="992dp"
+                android:layout_height="213dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="49dp"
+                app:srcCompat="@drawable/rst_cmpt" />
+
+            <ImageButton
+                android:id="@+id/btFinishOK"
+                android:layout_width="390dp"
+                android:layout_height="114dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="-10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/btsel_ok" />
+
+            <LinearLayout
+                android:id="@+id/layoutMember"
+                android:layout_width="800dp"
+                android:layout_height="240dp"
+                android:layout_below="@+id/imageView7"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textBox_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="right"
+                        android:text="경과시간 :"
+                        android:textColor="#37ffff"
+                        android:textSize="36sp" />
+
+                    <TextView
+                        android:id="@+id/tvFinishChargingTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="00:00:00"
+                        android:textColor="#ff7d00"
+                        android:textSize="36sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textBox_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="right"
+                        android:text="충전전력 :"
+                        android:textColor="#37ffff"
+                        android:textSize="36sp" />
+
+                    <TextView
+                        android:id="@+id/tvFinishChargingAmount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="0 kWh"
+                        android:textColor="#ff7d00"
+                        android:textSize="36sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textBox_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="right"
+                        android:text="충전금액 :"
+                        android:textColor="#37ffff"
+                        android:textSize="36sp" />
+
+                    <TextView
+                        android:id="@+id/tvFinishChargingCost"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="0원"
+                        android:textColor="#ff7d00"
+                        android:textSize="36sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textBox_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="right"
+                        android:text=" "
+                        android:textColor="#37ffff"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/textBox_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="(VAT포함)"
+                        android:textColor="#ff7d00"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutPay"
+                android:layout_width="850dp"
+                android:layout_height="240dp"
+                android:layout_below="@+id/imageView7"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="5dp"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textBox_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="left"
+                            android:text="충전시간 :"
+                            android:textColor="#37ffff"
+                            android:textSize="36sp" />
+
+                        <TextView
+                            android:id="@+id/tvFinishChargingTime2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="00:00:00"
+                            android:textColor="#ff7d00"
+                            android:textSize="36sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textBox_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="left"
+                            android:text="충전전력 :"
+                            android:textColor="#37ffff"
+                            android:textSize="36sp" />
+
+                        <TextView
+                            android:id="@+id/tvFinishChargingAmount2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="0 kWh"
+                            android:textColor="#ff7d00"
+                            android:textSize="36sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textBox_23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="left"
+                            android:text="사전결제금액 :"
+                            android:textColor="#37ffff"
+                            android:textSize="36sp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvPrePayCost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="0원"
+                            android:textColor="#ff7d00"
+                            android:textSize="36sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textBox_24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="left"
+                            android:text="충전금액 :"
+                            android:textColor="#37ffff"
+                            android:textSize="36sp" />
+
+                        <TextView
+                            android:id="@+id/tvFinishChargingCost2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="0원"
+                            android:textColor="#ff7d00"
+                            android:textSize="36sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textBox_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="left"
+                        android:text="취소요청금액 :"
+                        android:textColor="#37ffff"
+                        android:textSize="36sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvCancelPayCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="0원"
+                        android:textColor="#ff7d00"
+                        android:textSize="36sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textBox_19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="※ 취소요청금액은 카드사 영업일 기준 1~7일 후 자동 처리됩니다.(SMS 미발송)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

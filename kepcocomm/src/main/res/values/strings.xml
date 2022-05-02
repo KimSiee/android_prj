@@ -1,0 +1,11 @@
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 18. 7. 19 오전 8:27
+  ~
+  -->
+
+<resources>
+    <string name="app_name">kepcocomm</string>
+</resources>

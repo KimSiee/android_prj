@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>EV Charger System Configuration Page</title>
+    <!-- Icons-->
+    <link rel="icon" type="image/ico" href="./img/favicon.ico" sizes="any" />
+    <link href="vendors/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendors/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+
+  </head>
+  <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    <header class="app-header navbar">
+      <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img class="navbar-brand-full" src="img/brand/logo.gif" width="110" height="32" alt="CoreUI Logo">
+        <img class="navbar-brand-minimized" src="img/brand/sygnet.svg" width="30" height="30" alt="CoreUI Logo">
+      </a>
+      <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="nav navbar-nav d-md-down-none">
+        
+      </ul>
+      <ul class="nav navbar-nav ml-auto">       
+          <li class="nav-item px-3" >
+              <a class="nav-link icon-logout" href="#" id="btLogout"> Logout</a>
+            </li>
+      </ul>
+
+    </header>
+    <div class="app-body">
+      <div class="sidebar">
+        <nav class="sidebar-nav">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="status.html">
+                <i class="nav-icon icon-speedometer"></i> Charger Status                
+              </a>
+            </li>
+            <li class="nav-title">System</li>
+            <li class="nav-item">
+              <a class="nav-link" href="system.html">
+                <i class="nav-icon icon-settings"></i> System</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="network.html">
+                <i class="nav-icon icon-globe"></i> Network Setting</a>
+            </li>            
+            <li class="nav-title">OCPP</li>            
+            <li class="nav-item">
+              <a class="nav-link" href="configkey.html">
+                <i class="nav-icon icon-key"></i> Configuration Key</a>
+            </li>                        
+            <li class="nav-title">Diagonostics</li>
+            <li class="nav-item">
+              <a class="nav-link" href="recentlog_sys.html">
+                <i class="nav-icon icon-eye"></i> Recent System Log</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recentlog_comm.html">
+                <i class="nav-icon icon-feed"></i> Recent Comm Log</a>
+            </li>            
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="nav-icon cui-paperclip"></i> Authorization Cache</a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="nav-icon icon-people"></i> Local Authorization</a>
+            </li>                                
+          -->
+          </ul>
+        </nav>
+        <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+      </div>
+      <main class="main">
+        <p></p>
+        <div class="container-fluid">
+          <div id="ui-view"></div>
+        </div>
+      </main>
+      
+    </div>
+    <footer class="app-footer">
+      <div>
+        <a href="http://joas.co.kr">JoongAng Control</a>
+        <span>&copy; 2019 JoongAng Control Inc.</span>
+      </div>
+      <div class="ml-auto">
+        <span>Powered by</span>
+        <a href="http://joas.co.kr">JoongAng Control</a>
+      </div>
+    </footer>
+    <!-- CoreUI and necessary plugins-->
+    <script src="vendors/jquery/js/jquery.min.js"></script>
+    <script src="vendors/popper.js/js/popper.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendors/pace-progress/js/pace.min.js"></script>
+    <script src="vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
+    <script src="vendors/@coreui/coreui/js/coreui.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/global.js"></script>
+    <script>
+      var  config = {
+          defaultPage       : 'status.html',
+          errorPage         : '404.html',
+          subpagesDirectory : 'views/'
+      };
+
+      if ($.cookie('auth_info') == undefined ) {
+        doLogout();
+      }
+      else {      
+        $('#ui-view').ajaxLoad(config);
+        $(document).ajaxComplete(function() {
+          Pace.restart()
+        });
+      }
+
+      $("#btLogout").click(function() {
+        doLogout();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 18. 7. 16 오후 5:16
+  ~
+  -->
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:drawable="@drawable/member_card_ani_01" android:duration="210" />
+    <item android:drawable="@drawable/member_card_ani_02" android:duration="210" />
+    <item android:drawable="@drawable/member_card_ani_03" android:duration="210" />
+    <item android:drawable="@drawable/member_card_ani_04" android:duration="210" />
+    <item android:drawable="@drawable/member_card_ani_05" android:duration="210" />
+    <item android:drawable="@drawable/member_card_ani_06" android:duration="210" />
+</animation-list>

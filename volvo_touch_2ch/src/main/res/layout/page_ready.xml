@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 17. 12. 20 오전 11:26
+  ~
+  -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f5f6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="410dp">
+
+            <RelativeLayout
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/imgReservInfo"
+                    android:layout_width="390dp"
+                    android:layout_height="380dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/poscoimg_resrvinfo" />
+
+                <TextView
+                    android:id="@+id/tvCurrTime"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="110dp"
+                    android:fontFamily="@font/modernhmedium"
+                    android:gravity="center_horizontal"
+                    android:text="현재시간"
+                    android:textColor="@android:color/tertiary_text_dark"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvReservName"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="250dp"
+                    android:fontFamily="@font/modernhmedium"
+                    android:gravity="center"
+                    android:text="예약자\n없음"
+                    android:textColor="@android:color/tertiary_text_dark"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvReservTime"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="260dp"
+                    android:layout_marginTop="250dp"
+                    android:fontFamily="@font/modernhmedium"
+                    android:gravity="center"
+                    android:text="00:00:00"
+                    android:textColor="@android:color/tertiary_text_dark"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    android:id="@+id/btStartMain"
+                    style="@style/WhiteTextWithShadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/string_ctype"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

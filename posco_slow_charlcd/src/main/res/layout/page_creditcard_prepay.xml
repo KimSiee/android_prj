@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 21. 4. 29 오전 9:17
+  ~
+  -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="1190dp"
+        android:layout_height="590dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6">
+            <TextView
+                android:id="@+id/tvtitle1_prepay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/modernhmedium"
+                android:text="결제하실 충전요금은\n0000원 입니다."
+                android:textSize="52sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvtitle2_prepay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="250dp"
+                android:fontFamily="@font/modernhmedium"
+                android:gravity="left"
+                android:text="*주의사항\n1.충전이 완료된 후 반드시 동일한 신용카드로\n확정 금액 결제를 하셔야 합니다.
+\n\n2.카드 방향은 오른쪽 그림과 같이 삽입하시고, 카드가 삽입이 되지 않을 시 억지로 삽입하지 마시고, 방향을 재 확인 하시고 삽입하시기 바랍니다."
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4">
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="25dp"
+                android:scaleType="fitXY"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/imgnomemcard" />
+            <Button
+                android:id="@+id/btHome_prepay"
+                style="@style/WhiteTextWithShadow"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="230dp"
+                android:background="@drawable/button_selector"
+                android:text="@string/string_home"
+                android:fontFamily="@font/modernhmedium"
+                android:textColor="@android:color/background_light"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvMsg_prepay"
+            style="@style/WhiteTextWithShadow"
+            android:layout_width="800dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="210dp"
+            android:background="@drawable/bg_custom_alarm_view"
+            android:gravity="center"
+            android:text="[결제실패]\n\n네트워크오류\n오류코드:00"
+            android:fontFamily="@font/modernhmedium"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

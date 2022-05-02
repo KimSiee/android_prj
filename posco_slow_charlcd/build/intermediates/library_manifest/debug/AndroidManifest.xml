@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 20. 5. 22 오전 9:03
+  ~
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.joas.posco_slow_charlcd"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="22"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application android:label="SmartCharger" >
+        <activity
+            android:name="com.joas.posco_slow_charlcd.PoscoSlowCharLCDUIActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="SmartCharger"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

@@ -1,0 +1,63 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:9:1-23:12
+INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:9:1-23:12
+INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:9:1-23:12
+INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:9:1-23:12
+INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:9:1-23:12
+INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:9:1-23:12
+INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:9:1-23:12
+	package
+		ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:10:5-42
+		INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml
+		INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml
+		ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:9:1-23:12
+		INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml
+		ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:9:1-23:12
+		INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:9:11-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:12:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:13:22-77
+uses-permission#android.permission.INTERNET
+ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:14:5-66
+	android:name
+		ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:14:22-64
+application
+ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:15:5-22:19
+	android:label
+		ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:16:9-37
+activity#com.joas.posco_slow_charlcd.PoscoSlowCharLCDUIActivity
+ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:17:9-21:56
+	android:label
+		ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:20:13-41
+	android:configChanges
+		ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:19:13-74
+	android:theme
+		ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:21:13-44
+	android:name
+		ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml:18:13-82
+uses-sdk
+INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml
+INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml
+INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml
+INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml
+		ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml
+		INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml
+		ADDED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml
+		INJECTED from C:\project\SmartCharger\android\SmartCharger\posco_slow_charlcd\src\main\AndroidManifest.xml

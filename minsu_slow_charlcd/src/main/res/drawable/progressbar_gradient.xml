@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 18. 6. 22 오후 4:23
+  ~
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#777" />
+            <size
+                android:width="15dp"
+                android:height="15dp" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <layer-list>
+                <item>
+                    <color android:color="#00000000" />
+                </item>
+                <item
+                    android:left="2dp"
+                    android:top="2dp"
+                    android:right="2dp"
+                    android:bottom="2dp">
+                    <shape>
+                        <gradient
+                            android:startColor="#00FF00"
+                            android:centerColor="#FFFF00"
+                            android:endColor="#FF0000" />
+                        <size
+                            android:width="15dp"
+                            android:height="15dp" />
+                        <corners android:radius="10dp" />
+                    </shape>
+                </item>
+            </layer-list>
+        </clip>
+    </item>
+</layer-list>

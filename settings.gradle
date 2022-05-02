@@ -1,0 +1,6 @@
+include ':straffic_slow_charlcd'
+include ':straffic_comm'
+include ':kepco_charger_charlcd'
+include ':gridwiz_slow_charlcd'
+include ':paymenttestui'
+include ':app', ':ocppcomm', ':joasutils', ':joashw', ':wsclient', ':joasui_iot_video', ':evcomm', ':ocppui', ':certtest', ':certtestfast', ':certtestfast_v2', ':joasui_simple_charger', ':joasui_mobile_charger_2ch', ':kepco_charger', ':kepcocomm',  ':ocppui_dubai_2ch', ':ocppui_dubai_slow', ":minsu_slow",":minsu_comm", ":posco_slow_charlcd", ':posco_comm',':j14_touch_2ch',':j14_touch_2ch_comm',':kevcs_charger_charlcd',':kevcscomm', ':kevcs_charger', ':volvo_touch_2ch',':volvo_touch_2ch_comm',':ocppui_chargev',':ocppui_kevcs',':ocppui_namboo',':ocppui_tardis'

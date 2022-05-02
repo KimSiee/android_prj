@@ -1,0 +1,21 @@
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 20. 2. 26 오후 2:29
+  ~
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.joas.minsu_ui_charlcd" >
+
+    <application
+        android:label="SmartCharger">
+        <activity
+            android:name="com.joas.minsu_ui_charlcd.MinsuCharLCDUIActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="SmartCharger"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+</manifest>
+

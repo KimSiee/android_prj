@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 17. 12. 7 오후 12:32
+  ~
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#d7d7d7" />
+        </shape>
+    </item>
+
+    <item android:top="1dp" android:bottom="1dp" android:left="1dp" android:right="1dp" >
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 17. 12. 20 오전 11:26
+  ~
+  -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="1190dp"
+        android:layout_height="590dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <TextView
+                android:id="@+id/tvContentView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
+                android:fontFamily="@font/modernhmedium"
+                android:text="충전시간과 플러그타입을 설정하세요."
+                android:textSize="50sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btHome_TimeSelect"
+                style="@style/WhiteTextWithShadow"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/button_selector"
+                android:text="@string/string_home"
+                android:fontFamily="@font/modernhmedium"
+                android:textColor="@android:color/background_light"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/tvCost_timeselect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
+                android:fontFamily="@font/modernhmedium"
+                android:text="고객님의 충전단가는 000.0원/kwh 입니다."
+                android:textSize="40sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"></RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relativeLayout_timeselect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagSelectTime"
+                android:layout_width="600dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_timesel_slow" />
+            <TextView
+                android:id="@+id/tvHour_select"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="105dp"
+                android:gravity="center"
+                android:fontFamily="@font/modernhmedium"
+                android:text="00"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvMin_select"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="195dp"
+                android:gravity="center"
+                android:fontFamily="@font/modernhmedium"
+                android:text="00"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/btHourPlus"
+                android:layout_width="135dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="98dp"
+                android:clickable="true"
+                android:background="@drawable/b18_1"/>
+            <ImageView
+                android:id="@+id/btMinPlus"
+                android:layout_width="135dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="190dp"
+                android:clickable="true"
+                android:background="@drawable/b18_1"/>
+            <ImageView
+                android:id="@+id/btMinMinus"
+                android:layout_width="135dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="366dp"
+                android:layout_marginTop="190dp"
+                android:clickable="true"
+                android:background="@drawable/b18_2"/>
+            <ImageView
+                android:id="@+id/btHourMinus"
+                android:layout_width="135dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="366dp"
+                android:layout_marginTop="98dp"
+                android:clickable="true"
+                android:background="@drawable/b18_2"/>
+            <Button
+                android:id="@+id/btBtype"
+                android:layout_width="240dp"
+                android:layout_height="280dp"
+                android:layout_marginStart="650dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_selector"
+                android:text="B-type\n(왼쪽)"
+                android:fontFamily="@font/modernhmedium"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/btCtype"
+                android:layout_width="240dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="920dp"
+                android:fontFamily="@font/modernhmedium"
+                android:background="@drawable/button_selector"
+                android:text="C-type\n(오른쪽)"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:layout_marginEnd="30dp"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvMsg_TIMESELECT"
+            style="@style/WhiteTextWithShadow"
+            android:layout_width="800dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="210dp"
+            android:background="@drawable/bg_custom_alarm_view"
+            android:gravity="center"
+            android:text="alarm message"
+            android:fontFamily="@font/modernhmedium"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

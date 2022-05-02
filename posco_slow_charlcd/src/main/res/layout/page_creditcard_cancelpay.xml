@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 21. 4. 29 오전 9:17
+  ~
+  -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="1190dp"
+        android:layout_height="590dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.65">
+            <TextView
+                android:id="@+id/tvtitle1_cancelpay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="150dp"
+                android:fontFamily="@font/modernhmedium"
+                android:text="미처리된 취소결제건이 있습니다.\n취소금액은 0000원 입니다."
+                android:textSize="52sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvtitle2_cancelpay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="350dp"
+                android:fontFamily="@font/modernhmedium"
+                android:gravity="left"
+                android:text="*최초 결제 금액 취소를 위해 결제시 사용했던 신용카드를\n오른쪽 그림과 같이 삽입해 주세요."
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35">
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="25dp"
+                android:scaleType="fitXY"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/imgnomemcard" />
+            <Button
+                android:id="@+id/btHome_cancelpay"
+                style="@style/WhiteTextWithShadow"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="180dp"
+                android:background="@drawable/button_selector"
+                android:text="@string/string_home"
+                android:fontFamily="@font/modernhmedium"
+                android:textColor="@android:color/background_light"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvMsg_cancelpay"
+            style="@style/WhiteTextWithShadow"
+            android:layout_width="800dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="210dp"
+            android:background="@drawable/bg_custom_alarm_view"
+            android:gravity="center"
+            android:text="[결제실패]\n\n네트워크오류\n오류코드:00"
+            android:fontFamily="@font/modernhmedium"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

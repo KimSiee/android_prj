@@ -1,0 +1,142 @@
+<script src="js/system.js"></script>
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header">
+          <b>System Configuration</b>
+        </div>           
+        <div class="card-body">
+          <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">                          
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="charger_id">Charger ID</label>
+              <div class="col-md-9">
+                <input class="form-control" id="charger_id" name="charger_id" type="text" placeholder="1"/>
+                <span class="help-block">Please enter ID of Charger</span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="server_uri">Server URI</label>
+              <div class="col-md-9">
+                <input class="form-control" id="server_uri" name="server_uri" type="text"  placeholder="ws://192.168.0.100/ocpp"/>
+              <span class="help-block">Please enter URI of OCPP Server</span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="http_auth_id">Basic Auth ID</label>
+              <div class="col-md-9">
+                <input class="form-control" id="http_auth_id" name="http_auth_id" type="text"  placeholder="user"/>
+                <span class="help-block">Please enter HTTP basic authentication ID</span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="http_auth_pwd">Basic Auth Password</label>
+              <div class="col-md-9">
+                <input class="form-control" id="http_auth_pwd" name="http_auth_pwd" type="text" placeholder="password">
+                <span class="help-block">Please enter HTTP basic authentication Password</span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="admin_pwd">Admin Password</label>
+              <div class="col-md-9">
+                <input class="form-control" id="admin_pwd" name="admin_pwd" type="text" placeholder="password">
+                <span class="help-block">Please enter admin Password for web login and setting</span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="use_http_auth">Using HTTP Authentication</label>
+              <div class="col-md-9 mt-1">
+                <label class="switch switch-label switch-pill switch-primary">                
+                  <input id="use_http_auth" class="switch-input" type="checkbox" />
+                  <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>                
+                </label>
+              </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="use_watchdog">Using WatchDog Timer</label>
+                <div class="col-md-9 mt-1">
+                  <label class="switch switch-label switch-pill switch-primary">                
+                    <input id="use_watchdog" class="switch-input" type="checkbox" checked=""/>
+                    <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>                
+                  </label>
+                </div>
+              </div>      
+          </form>
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="use_watchdog">Using SSL Trust CA file(.crt)</label>
+            <div class="col-md-9 mt-1">
+              <label class="switch switch-label switch-pill switch-primary">
+                <input id="use_trustca" class="switch-input" type="checkbox" checked=""/>
+                <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
+              </label>
+            </div>
+          </div>
+          </form>
+          <p class="text-danger" id="wrongMsg"></p>       
+        </div>      
+        <div class="card-footer">
+          <div class="float-right">
+            <button class="btn btn-sm btn-primary" type="submit" id="submit">
+              <i class="fa fa-dot-circle-o"></i> Submit</button>
+            <button class="btn btn-sm btn-danger" type="reset" id="reset">
+              <i class="fa fa-ban"></i> Reset</button>          
+          </div>
+        </div>                            
+      </div>
+      <!-- /.col-->
+    </div>      
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card border-info">
+        <div class="card-header"><b>SSL Trust CA file Upload(.crt file)</b></div>
+        <div class="card-body">
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="file-ca">Select File</label>
+            <div class="col-md-9">
+              <input id="file-ca" type="file" name="file-ca" />
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block" type="button" id="btStartUploadCA">Start SSL CA Upload</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card border-danger">
+          <div class="card-header"><b>Software Update</b></div>
+          <div class="card-body">              
+              <div class="form-group row">
+                  <label class="col-md-3 col-form-label" for="file-input">Select File</label>
+                  <div class="col-md-9">
+                    <input id="file-input" type="file" name="file-input" />                      
+                  </div>                    
+              </div>      
+              <button class="btn btn-primary btn-block" type="button" id="btStartUpdate">Start S/W Update</button>
+              <p></p>
+              <p><h6>* Warning: Do not reset the power during the update!</h6></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.row-->
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card border-danger">
+      <div class="card-header"><b>Factory Reset</b></div>
+      <div class="card-body">
+        <button class="btn btn-danger btn-block" type="button" id="btFactoryReset">Factory Reset!!</button>
+        <p></p>
+        <p><h6>* Warning: All Data will be erased. Initial IP address is 192.168.0.230 </h6></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- /.row-->
+</div>
+

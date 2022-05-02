@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 21. 4. 21 오후 2:25
+  ~
+  -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="1190dp"
+        android:layout_height="590dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/tvmaintitle_inputauth"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="승인 번호 입력"
+            android:fontFamily="@font/modernhmedium"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/tvrow1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+            <TextView
+                android:id="@+id/tvauthnum_an"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:gravity="center_vertical"
+                android:text="22"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="40sp"
+                android:fontFamily="@font/modernhmedium"
+                android:background="@drawable/edge"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvlefttime_an"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="(남은시간 : 03:00)"
+                android:textSize="30sp"
+                android:fontFamily="@font/modernhmedium"
+                android:textColor="@android:color/holo_red_light"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/Row1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+
+            <Button
+                android:id="@+id/btNum1_an"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="1"
+                android:fontFamily="@font/modernhmedium"
+                android:textStyle="bold"
+                android:textSize="50sp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_selector_kakao"
+                />
+
+            <Button
+                android:id="@+id/btNum2_an"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="2"
+                android:fontFamily="@font/modernhmedium"
+                android:textStyle="bold"
+                android:background="@drawable/button_selector_kakao"
+                android:layout_margin="5dp"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btNum3_an"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="3"
+                android:fontFamily="@font/modernhmedium"
+                android:background="@drawable/button_selector_kakao"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btNumBS_an"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:fontFamily="@font/modernhmedium"
+                android:layout_margin="5dp"
+                android:text="DELETE"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Row2"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+
+            <Button
+                android:id="@+id/btNum4_an"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="4"
+                android:fontFamily="@font/modernhmedium"
+                android:textStyle="bold"
+                android:background="@drawable/button_selector_kakao"
+                android:layout_margin="5dp"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btNum5_an"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="5"
+                android:fontFamily="@font/modernhmedium"
+                android:background="@drawable/button_selector_kakao"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btNum6_an"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="6"
+                android:fontFamily="@font/modernhmedium"
+                android:background="@drawable/button_selector_kakao"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btNumClear_an"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Clear"
+                android:fontFamily="@font/modernhmedium"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Row3"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+
+            <Button
+                android:id="@+id/btNum7_an"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="7"
+                android:fontFamily="@font/modernhmedium"
+                android:textStyle="bold"
+                android:background="@drawable/button_selector_kakao"
+                android:layout_margin="5dp"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btNum8_an"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="8"
+                android:fontFamily="@font/modernhmedium"
+                android:background="@drawable/button_selector_kakao"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btNum9_an"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="9"
+                android:fontFamily="@font/modernhmedium"
+                android:textStyle="bold"
+                android:background="@drawable/button_selector_kakao"
+                android:layout_margin="5dp"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btNumCancel_an"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:fontFamily="@font/modernhmedium"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Row4"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+
+            <Button
+                android:id="@+id/btNum0_an"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0"
+                android:fontFamily="@font/modernhmedium"
+                android:textStyle="bold"
+                android:background="@drawable/button_selector_kakao"
+                android:layout_margin="5dp"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btNumOK_an"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector_orange"
+                android:text="OK"
+                android:fontFamily="@font/modernhmedium"
+                android:textStyle="bold"
+                android:textSize="50sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tvContentView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/modernhmedium"
+                android:text="*승인번호 2자리를 입력하세요."
+                android:textSize="30sp"
+                android:textColor="#898a8c"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvMsg_authNum"
+            style="@style/WhiteTextWithShadow"
+            android:layout_width="800dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="210dp"
+            android:background="@drawable/bg_custom_alarm_view"
+            android:gravity="center"
+            android:text="[알림]\n\n인증번호가 잘못되었습니다."
+            android:fontFamily="@font/modernhmedium"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

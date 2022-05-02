@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 17. 12. 26 오후 6:15
+  ~
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCellDsp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvDSPMonTrx"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@drawable/comm_cell_chape"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="TRX"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvDSPMonAddr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@drawable/comm_cell_chape"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="Date"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvDSPMonHex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:background="@drawable/comm_cell_chape"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="SEQ"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvDSPMonDec"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:background="@drawable/comm_cell_chape"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="SID/CID"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvDSPMonBin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:background="@drawable/comm_cell_chape"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="Type"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp" />
+
+</LinearLayout>

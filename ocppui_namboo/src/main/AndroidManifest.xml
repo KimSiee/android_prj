@@ -1,0 +1,21 @@
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 18. 1. 25 오후 3:53
+  ~
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.joas.ocppui_namboo" >
+
+    <application
+        android:label="SmartCharger">
+        <activity
+            android:name="com.joas.ocppui_namboo.OCPPUINambooActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="SmartCharger"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+</manifest>
+

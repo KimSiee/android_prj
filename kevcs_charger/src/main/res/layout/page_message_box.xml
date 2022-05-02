@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 17. 12. 5 오후 4:37
+  ~
+  -->
+
+<android.widget.FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1280dp"
+    android:layout_height="720dp"
+    android:background="@drawable/kevcs_bg"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="1088dp"
+            android:layout_height="510dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/popup"
+            android:elevation="15dp">
+
+            <TextView
+                android:id="@+id/tvMessageBoxTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="53dp"
+                android:text="MSG TITLE"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvMessageBoxContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMessageBoxTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="잘못된 비밀번호입니다."
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="50sp" />
+
+            <LinearLayout
+                android:id="@+id/layoutRetry"
+                android:layout_width="600dp"
+                android:layout_height="160dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="36dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvRetryMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="재시도바랍니다."
+                        android:textColor="#7f8191"
+                        android:textSize="32sp"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/imagePhone"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/pop_phone" />
+
+                    <TextView
+                        android:id="@+id/tvTelephone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="1899-2100"
+                        android:textColor="#7f8191"
+                        android:textSize="32sp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btMsgBoxOK"
+                    android:layout_width="390dp"
+                    android:layout_height="114dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btsel_ok" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.widget.FrameLayout>

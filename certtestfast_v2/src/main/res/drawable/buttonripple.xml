@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 18. 6. 7 오후 6:35
+  ~
+  -->
+
+<ripple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#33ffaaaa">
+    <!-- 위의 색상은 Ripple Effect의 Color를 가리킵니다. -->
+
+    <item>
+        <!--
+            Item 하위에 Drawable를 추가할 수 있습니다.
+            이는 버튼의 배경이 됩니다.
+        -->
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp" />
+            <solid android:color="#d4621b"/>
+        </shape>
+    </item>
+</ripple>

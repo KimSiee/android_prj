@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 17. 12. 20 오전 10:25
+  ~
+  -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="463dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="400dp"
+                android:layout_weight="0.1">
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="170dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/ui_seq_bar">
+
+                </ImageView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="380dp"
+                android:layout_weight="0.8"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/connector_wait_img"
+                    android:layout_width="819dp"
+                    android:layout_height="252dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="40dp"
+                    android:background="@drawable/connector_wait_img1"
+                    tools:ignore="SpeakableTextPresentCheck"></ImageView>
+
+                <ImageButton
+                    android:id="@+id/btConnectorWaitNext"
+                    android:layout_width="390dp"
+                    android:layout_height="390dp"
+                    android:layout_marginStart="190dp"
+                    android:background="@drawable/button_selector_charging_start"></ImageButton>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="400dp"
+                android:layout_weight="0.1">
+
+                <ImageButton
+                    android:id="@+id/btConnectorWaitHome"
+                    style="@style/WhiteTextWithShadow"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/button_selector_home" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp">
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/nanumsquare_acr"
+                android:gravity="center"
+                android:text="After connecting the charging gun to the EV,\npress START button."
+                android:textAlignment="center"
+                android:textColor="#d3d3d3"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

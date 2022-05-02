@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 18. 7. 17 오전 8:44
+  ~
+  -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="311dp"
+        tools:layout_editor_absoluteY="111dp">
+
+        <ImageView
+            android:id="@+id/imageCreditCardTag"
+            android:layout_width="544dp"
+            android:layout_height="544dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/ani_credit_card" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageCreditCardTag"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="카드 리더기에 신용카드를 접촉해 주세요"
+            android:textColor="#ffffff"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="624dp"
+            android:layout_height="279dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/infobox_credit"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="50dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPrePayCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="선결제 금액을 취소합니다."
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvRealPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="신용카드를 태그해주세요."
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPrePay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="금액"
+                    android:textColor="#adff2f"
+                    android:textSize="44sp" />
+
+                <TextView
+                    android:id="@+id/tvPrePayValue"
+                    android:layout_width="323dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="44sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

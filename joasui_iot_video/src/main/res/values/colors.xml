@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="bt_bg">#00b5a4</drawable>
+    <drawable name="bt_bg_pressed">#50a594</drawable>
+    <color name="colorCell">#aa015093</color>
+    <color name="colorCellDsp">#aaca9b00</color>
+    <color name="colorCellDebugMsg">#872b00c6</color>
+</resources>

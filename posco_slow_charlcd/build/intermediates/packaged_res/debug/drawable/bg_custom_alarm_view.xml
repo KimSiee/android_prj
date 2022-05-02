@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 21. 4. 15 오후 2:39
+  ~
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="false" android:state_pressed="false">
+        <shape>
+            <solid android:color="#DC33B5E5"/>
+            <stroke android:color="#105B74"
+                android:width="5dp"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 17. 12. 20 오전 11:27
+  ~
+  -->
+
+<resources>
+    <string name="title_name">전기자동차 충전기</string>
+    <string name="company_name">중앙제어 주식회사</string>
+    <string name="string_btype">B-Type</string>
+    <string name="string_ctype">C-Type</string>
+    <string name="app_name">OCPP</string>
+    <string name="string_authwait">사용자 인증중입니다. 잠시만 기다려 주세요.</string>
+    <string name="string_cardtag">회원 카드를 테크해 주시기 바랍니다.</string>
+    <string name="string_home">처음으로</string>
+    <string name="string_connector_wait">충전 커넥터 연결 대기중입니다.</string>
+    <string name="string_conector_begin_charging">차량에 커넥터를 연결하고 시작 버턴을 눌러주세요.</string>
+    <string name="string_select_charging_method">적합한 충전 방식을 선택해 주십시요.</string>
+    <string name="string_charging">충전중입니다</string>
+    <string name="string_charge_amount">충전량:</string>
+    <string name="string_charging_time">충전시간:</string>
+    <string name="string_time_remain">남은시간:</string>
+    <string name="string_finish_charging">충전종료</string>
+    <string name="title_finish_charging">충전 종료</string>
+    <string name="sub_title_finish_charging">충전이 완료되었습니다. 커넥터를 분리하세요.</string>
+    <string name="string_save">저장하기</string>
+    <string name="string_hide_kbd">키보드숨기기</string>
+    <string name="string_basicset">기본세팅</string>
+    <string name="string_input_admin_password">관리자 암호를 입력하세요.</string>
+    <string name="string_password_incorrect">패스워드가 잘못되었습니다.</string>
+    <string name="string_comm_monitor">통신모니터</string>
+    <string name="string_hide">숨기기</string>
+    <string name="string_connect_car_wait">차량 연결을 기다리고 있습니다.</string>
+    <string name="string_finish_app">App 종료</string>
+    <string name="string_clear">모두지우기</string>
+    <string name="string_charging_cost">충전 금액:</string>
+    <string name="string_ac3">AC3</string>
+    <string name="string_dcchademo">DC 차데모</string>
+    <string name="string_dccombo">DC 콤보</string>
+    <string name="string_charging_start">충전 시작</string>
+    <string name="string_remote_started">원격 시작</string>
+    <string name="title_activity_slow_iotvideo">MainActivity</string>
+
+
+
+
+    <string name="string_emergency_title">비상 버턴을 해제하여 주세요</string>
+    <string name="string_fault_title">오류 발생!</string>
+    <string name="str_tag_finish_charging">충전을 끝내시려면 카드를 테깅하세요</string>
+    <string name="str_auth_fail_title">인증 실패</string>
+    <string name="str_auth_fail_content">"카드 인증에 실패하였습니다.
+확인하시고 다시 시도해 주시기 바랍니다."</string>
+    <string name="str_hard_reset_title">Hard Reset</string>
+    <string name="str_hard_reset_content">원격에서 리셋 명령으로 인하여 재부팅이 진행됩니다</string>
+    <string name="str_soft_reset_title">Soft Reset</string>
+    <string name="str_soft_reset_content">원격에서 "Soft Reset" 명령으로 인하여 초기화됩니다</string>
+    <string name="string_dsp_comm_err">UI-DSP(제어보드) 통신 오류</string>
+    <string name="string_charge_finishing">충전완료중입니다.\n
+잠시만 기다려주세요.</string>
+    <string name="string_unavailable">충전기가 현재 중앙시스템의 의해 사용이 가능하지 않습니다. 다음에 이용해 주세요.</string>
+    <string name="string_reserved">예약 대기중</string>
+    <string name="str_auth_fail_content_reserved">예약된 카드가 아닙니다.\n
+확인하시고 다시 시도해주세요.</string>
+</resources>

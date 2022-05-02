@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/certtest" />
+            <option value="$PROJECT_DIR$/certtestfast" />
+            <option value="$PROJECT_DIR$/certtestfast_v2" />
+            <option value="$PROJECT_DIR$/evcomm" />
+            <option value="$PROJECT_DIR$/gridwiz_slow_charlcd" />
+            <option value="$PROJECT_DIR$/j14_touch_2ch" />
+            <option value="$PROJECT_DIR$/j14_touch_2ch_comm" />
+            <option value="$PROJECT_DIR$/joashw" />
+            <option value="$PROJECT_DIR$/joasui_iot_video" />
+            <option value="$PROJECT_DIR$/joasui_mobile_charger_2ch" />
+            <option value="$PROJECT_DIR$/joasui_simple_charger" />
+            <option value="$PROJECT_DIR$/joasutils" />
+            <option value="$PROJECT_DIR$/kepco_charger" />
+            <option value="$PROJECT_DIR$/kepco_charger_charlcd" />
+            <option value="$PROJECT_DIR$/kepcocomm" />
+            <option value="$PROJECT_DIR$/kevcs_charger" />
+            <option value="$PROJECT_DIR$/kevcs_charger_charlcd" />
+            <option value="$PROJECT_DIR$/kevcscomm" />
+            <option value="$PROJECT_DIR$/minsu_comm" />
+            <option value="$PROJECT_DIR$/minsu_slow" />
+            <option value="$PROJECT_DIR$/ocppcomm" />
+            <option value="$PROJECT_DIR$/ocppui" />
+            <option value="$PROJECT_DIR$/ocppui_chargev" />
+            <option value="$PROJECT_DIR$/ocppui_dubai_2ch" />
+            <option value="$PROJECT_DIR$/ocppui_dubai_slow" />
+            <option value="$PROJECT_DIR$/ocppui_kevcs" />
+            <option value="$PROJECT_DIR$/ocppui_namboo" />
+            <option value="$PROJECT_DIR$/ocppui_tardis" />
+            <option value="$PROJECT_DIR$/paymenttestui" />
+            <option value="$PROJECT_DIR$/posco_comm" />
+            <option value="$PROJECT_DIR$/posco_slow_charlcd" />
+            <option value="$PROJECT_DIR$/straffic_comm" />
+            <option value="$PROJECT_DIR$/straffic_slow_charlcd" />
+            <option value="$PROJECT_DIR$/volvo_touch_2ch" />
+            <option value="$PROJECT_DIR$/volvo_touch_2ch_comm" />
+            <option value="$PROJECT_DIR$/wsclient" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

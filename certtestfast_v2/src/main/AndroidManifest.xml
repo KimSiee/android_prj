@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 20. 5. 22 오후 5:33
+  ~
+  -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.joas.certtestfast_v2">
+
+    <application>
+        <activity
+            android:name=".CertTestFastV2Activity"
+            android:label="@string/title_activity_cert_test"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+            <!--android:configChanges="keyboard|keyboardHidden|touchscreen|screenLayout">-->
+        </activity>
+    </application>
+
+</manifest>

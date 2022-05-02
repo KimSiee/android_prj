@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 18. 1. 25 오후 4:17
+  ~
+  -->
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context="com.joas.ocppui_chargev.OCPPUIChargevActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/btEvCarIcon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:adjustViewBounds="true"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/evcharger" />
+
+            <TextView
+                android:id="@+id/tvContentView"
+                style="@style/WhiteTextWithShadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="24dp"
+                android:layout_toEndOf="@+id/btEvCarIcon"
+                android:text="@string/title_name"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvRemoteStartedMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btEvCarIcon"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_box"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/string_remote_started"
+                android:textColor="?attr/colorAccent"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvReservedMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btEvCarIcon"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_box"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/string_reserved"
+                android:textColor="?attr/colorAccent"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/tvCompanyName"
+                style="@style/WhiteTextWithShadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/tvContentView"
+                android:layout_marginEnd="25dp"
+                android:text="@string/company_name"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvVersion"
+                style="@style/WhiteTextWithShadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tvCompanyName"
+                android:layout_below="@+id/tvCompanyName"
+                android:text="v1.3"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageCommStatus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/tvContentView"
+                android:layout_marginEnd="21dp"
+                android:layout_toStartOf="@+id/tvCompanyName"
+                android:src="@drawable/commicon_fail" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayout"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/layoutMsg"
+                android:layout_width="1240dp"
+
+                android:layout_height="600dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:alpha="100"
+                android:background="@android:color/background_light"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/viewsub_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

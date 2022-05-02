@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 18. 6. 25 오전 11:36
+  ~
+  -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    tools:context="com.joas.kevcs.ui.KevcsUIActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="1280dp"
+        android:layout_height="720dp"
+        android:background="@drawable/kevcs_bg">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="horizontal"
+            android:paddingTop="16.5dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/btHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/btsel_home" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvChargerID"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="20dp"
+                android:text="ID"
+                android:textColor="#5d616c"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iconServerComm"
+                    android:layout_width="100dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/status_comm"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iconServerCommError"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="30dp"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/status_fault" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iconPayReaderError"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="30dp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/status_fault" />
+
+                <ImageView
+                    android:id="@+id/iconPayReaderStatus"
+                    android:layout_width="100dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/status_rfcard"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iconDSPComm"
+                    android:layout_width="100dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/status_dsp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iconDSPCommError"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="30dp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/status_fault" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iconMeterStatus"
+                    android:layout_width="100dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/status_meter"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iconMeterStatusError"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="30dp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/status_fault" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="417dp"
+                android:layout_height="61dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvChargerID3"
+                    android:layout_width="322dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:text="고객센터:1522-1782"
+                    android:textColor="#5d616c"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/btLogo"
+                    android:layout_width="314dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/kevcs_new_logo"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iconStatus"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="16.5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/status_normal" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/frameMsg"
+            android:layout_width="match_parent"
+            android:layout_height="635dp"
+            android:layout_marginTop="85dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:id="@+id/viewsub_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvOpenEnclosure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="700dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_selector_red"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="외함 개방됨"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout3"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout3" />
+
+
+</android.support.constraint.ConstraintLayout>

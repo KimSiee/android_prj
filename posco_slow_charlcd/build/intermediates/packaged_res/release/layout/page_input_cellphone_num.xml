@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 21. 4. 21 오후 2:25
+  ~
+  -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="1190dp"
+        android:layout_height="590dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/tvmaintitle_inputcp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="휴대폰 번호 입력"
+            android:fontFamily="@font/modernhmedium"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvcpnum"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:background="@drawable/edge"
+            android:layout_margin="5dp"
+            android:text="01011112222"
+            android:paddingLeft="10dp"
+            android:textSize="40sp"
+            android:fontFamily="@font/modernhmedium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/Row1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+
+            <Button
+                android:id="@+id/btNum1_cp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="1"
+                android:fontFamily="@font/modernhmedium"
+                android:background="@drawable/button_selector"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btNum2_cp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="2"
+                android:fontFamily="@font/modernhmedium"
+                android:background="@drawable/button_selector_kakao"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btNum3_cp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="3"
+                android:fontFamily="@font/modernhmedium"
+                android:background="@drawable/button_selector_kakao"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btNumBS_cp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:fontFamily="@font/modernhmedium"
+                android:layout_margin="5dp"
+                android:text="DELETE"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Row2"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+
+            <Button
+                android:id="@+id/btNum4_cp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="4"
+                android:fontFamily="@font/modernhmedium"
+                android:background="@drawable/button_selector_kakao"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btNum5_cp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="5"
+                android:fontFamily="@font/modernhmedium"
+                android:background="@drawable/button_selector_kakao"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btNum6_cp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="6"
+                android:fontFamily="@font/modernhmedium"
+                android:background="@drawable/button_selector_kakao"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btNumClear_cp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Clear"
+                android:fontFamily="@font/modernhmedium"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Row3"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+
+            <Button
+                android:id="@+id/btNum7_cp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="7"
+                android:fontFamily="@font/modernhmedium"
+                android:background="@drawable/button_selector_kakao"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btNum8_cp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="8"
+                android:fontFamily="@font/modernhmedium"
+                android:background="@drawable/button_selector_kakao"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btNum9_cp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="9"
+                android:fontFamily="@font/modernhmedium"
+                android:background="@drawable/button_selector_kakao"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btNumCancel_cp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:fontFamily="@font/modernhmedium"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Row4"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+
+            <Button
+                android:id="@+id/btNum0_cp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0"
+                android:fontFamily="@font/modernhmedium"
+                android:background="@drawable/button_selector_kakao"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/btNumOK_cp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector_orange"
+                android:text="OK"
+                android:fontFamily="@font/modernhmedium"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="50sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tvContentView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/modernhmedium"
+                android:text="*비회원은 휴대폰 인증 후 사용하실 수 있습니다."
+                android:textSize="30sp"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvMsg_CP"
+            style="@style/WhiteTextWithShadow"
+            android:layout_width="800dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="210dp"
+            android:background="@drawable/bg_custom_alarm_view"
+            android:gravity="center"
+            android:text="[알림]\n\n휴대폰 번호가 잘못되었습니다."
+            android:fontFamily="@font/modernhmedium"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 17. 12. 6 오후 4:25
+  ~
+  -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="1190dp"
+        android:layout_height="590dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginStart="530dp"
+            android:text="충전이 완료되었습니다."
+            android:fontFamily="@font/modernhmedium"
+            android:textSize="52sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:layout_marginStart="530dp"
+            android:text="케이블을 정리하시고 다음 차량을 위해\n이동주차 바랍니다."
+            android:fontFamily="@font/modernhmedium"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btFinishChargingHome"
+            style="@style/WhiteTextWithShadow"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="950dp"
+            android:background="@drawable/button_selector"
+            android:text="@string/string_home"
+            android:fontFamily="@font/modernhmedium"
+            android:textColor="@android:color/background_light"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgview_showchginfo"
+            android:layout_width="400dp"
+            android:layout_height="405dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="90dp"
+            android:src="@drawable/img_fincharging" />
+
+        <TextView
+            android:id="@+id/tvFinishChargingTime"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270dp"
+            android:layout_marginStart="240dp"
+            android:gravity="left"
+            android:text="00:00:00"
+            android:fontFamily="@font/modernhmedium"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvFinishChargingAmount"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="319dp"
+            android:layout_marginStart="200dp"
+            android:gravity="right"
+            android:text="11.03"
+            android:fontFamily="@font/modernhmedium"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvFinishChargingCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:gravity="right"
+            android:text="충전금액 : 100원"
+            android:fontFamily="@font/modernhmedium"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

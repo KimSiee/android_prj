@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 18. 1. 22 오후 1:40
+  ~
+  -->
+
+
+<android.widget.FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:clickable="false"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:id="@+id/frameDbgMsgViewBox"
+        android:layout_width="600dp"
+        android:layout_height="580dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="41dp"
+        android:elevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorCellDebugMsg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.05"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btDbgMsgViewClear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/string_clear"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btDbgMsgHide"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/string_hide"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3">
+
+                    <ImageView
+                        android:id="@+id/imageDbgMsgArrowMove"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/arrow_move" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.02"
+                android:background="@color/colorCellDebugMsg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:background="@drawable/comm_cell_chape"
+                    android:gravity="center"
+                    android:text="Time"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/comm_cell_chape"
+                    android:gravity="center"
+                    android:text="Level"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@drawable/comm_cell_chape"
+                    android:gravity="center"
+                    android:text="TAG"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:background="@drawable/comm_cell_chape"
+                    android:gravity="center"
+                    android:text="Msg"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvDebugMsgTable"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.83">
+
+
+            </ListView>
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.widget.FrameLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.joas.smartcharger.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btStartChargerApp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:onClick="onClickStartCharger"
+            android:text="Start Charger App"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tvWaitLoadingMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Waiting for Loading..."
+            android:textAlignment="center"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/editTextDummy"
+            android:layout_width="0dp"
+            android:layout_height="8dp"
+            android:defaultFocusHighlightEnabled="false"
+            android:ems="10"
+            android:focusedByDefault="false"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="false" />
+
+        <Button
+            android:id="@+id/btCertTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCertTest"
+            android:text="Cert Test"
+            android:textSize="26sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btExitApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickExitApp"
+            android:text="ExitApp"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btRotatePortrait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRotatePortrait"
+            android:text="Rotate Protrait"
+            android:textSize="26sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btRotateLandscape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRotateLandscape"
+            android:text="Rotate Landscape"
+            android:textSize="26sp"
+            android:visibility="gone" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/btRebootSystem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRebootSystem"
+            android:text="Reboot"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

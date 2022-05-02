@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 18. 1. 19 오후 1:48
+  ~
+  -->
+
+
+<android.widget.FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:clickable="false"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:id="@+id/frameDSPViewBox"
+        android:layout_width="300dp"
+        android:layout_height="680dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="950dp"
+        android:layout_marginTop="41dp"
+        android:elevation="21dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorCellDsp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.05"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3">
+
+                    <ImageView
+                        android:id="@+id/imageDSPViewArrowMove"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/arrow_move" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btDSPView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/string_clear"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btDSPMNTHide"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/string_hide"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.02"
+                android:background="@color/colorCell"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/comm_cell_chape"
+                    android:gravity="center"
+                    android:text="TRX"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/comm_cell_chape"
+                    android:gravity="center"
+                    android:text="ADDR"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@drawable/comm_cell_chape"
+                    android:gravity="center"
+                    android:text="HEX"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@drawable/comm_cell_chape"
+                    android:gravity="center"
+                    android:text="DEC"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/comm_cell_chape"
+                    android:gravity="center"
+                    android:text="BIN"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvDspMonPacketTable"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.83">
+
+
+            </ListView>
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.widget.FrameLayout>

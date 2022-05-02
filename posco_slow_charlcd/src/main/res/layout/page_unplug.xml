@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 21. 4. 19 오전 11:41
+  ~
+  -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="1190dp"
+        android:layout_height="590dp"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/imgview_unplug"
+            android:layout_width="370dp"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="100dp"
+            android:src="@drawable/img_unplug" />
+        <Button
+            android:id="@+id/btHome_unplug"
+            style="@style/WhiteTextWithShadow"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="950dp"
+            android:background="@drawable/button_selector"
+            android:text="확 인"
+            android:fontFamily="@font/modernhmedium"
+            android:textColor="@android:color/background_light"
+            android:textSize="35sp"
+            android:visibility="invisible"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginStart="500dp"
+            android:layout_marginTop="180dp"
+            android:fontFamily="@font/modernhmedium"
+            android:text="커넥터를 차량과 분리하십시오."
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginStart="500dp"
+            android:layout_marginTop="240dp"
+            android:fontFamily="@font/modernhmedium"
+            android:gravity="left"
+            android:text="커넥터가 분리되면\n충전이 완료됩니다."
+            android:textSize="52sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

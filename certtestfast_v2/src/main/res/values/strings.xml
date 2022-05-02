@@ -1,0 +1,12 @@
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 18. 6. 7 오후 5:02
+  ~
+  -->
+
+<resources>
+    <string name="app_name">CertTest</string>
+    <string name="title_activity_cert_test">CertTestActivity</string>
+</resources>

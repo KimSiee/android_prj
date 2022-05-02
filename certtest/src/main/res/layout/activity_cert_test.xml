@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 18. 6. 7 오후 5:03
+  ~
+  -->
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9fc39e"
+    tools:context="com.joas.certtest.CertTestFastActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#009688"
+            android:gravity="center"
+            android:text="인증 및 테스트 모드"
+            android:textColor="@android:color/background_light"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/tvCertTestStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="상태"
+            android:textColor="@android:color/background_light"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btCertTestSlowBStart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickSlowBStart"
+                android:padding="10dp"
+                android:text="완속 B"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btCertTestSlowCStart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickSlowCStart"
+                android:padding="10dp"
+                android:text="완속 C"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btCertTestComboStart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickComboStart"
+                android:padding="10dp"
+                android:text="콤보"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btCertTestChademoStart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickChademoStart"
+                android:padding="10dp"
+                android:text="차데모"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btCertTestStop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickStop"
+                android:padding="10dp"
+                android:text="중지"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="#822e2e"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="전압"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCertTestVoltageInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="#822e2e"
+                android:gravity="right"
+                android:padding="10dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCertTestVoltageDSP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="#822e2e"
+                android:gravity="right"
+                android:padding="10dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btCertTestDoor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickDoor"
+                android:padding="10dp"
+                android:text="DOOR"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewCurrent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="#68015c"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="전류"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCertTestCurrentInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="#68015c"
+                android:gravity="right"
+                android:padding="10dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCertTestCurrentDSP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="#68015c"
+                android:gravity="right"
+                android:padding="10dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btCertTestInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickInput"
+                android:padding="10dp"
+                android:text="전압입력"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCertTestInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="#001639"
+                android:gravity="right"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btCertTestInputOK"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickInputOK"
+                android:padding="10dp"
+                android:text="OK"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btCertTestInputClear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickInputClear"
+                android:padding="10dp"
+                android:text="Clear"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btCertTestExit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickExit"
+                android:padding="10dp"
+                android:text="Exit"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btCertNum1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickNum1"
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:textSize="45sp" />
+
+            <Button
+                android:id="@+id/btCertNum2"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickNum2"
+                android:text="2"
+                android:textColor="@android:color/white"
+                android:textSize="45sp" />
+
+            <Button
+                android:id="@+id/btCertNum3"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickNum3"
+                android:text="3"
+                android:textColor="@android:color/white"
+                android:textSize="45sp" />
+
+            <Button
+                android:id="@+id/btCertNum4"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickNum4"
+                android:text="4"
+                android:textColor="@android:color/white"
+                android:textSize="45sp" />
+
+            <Button
+                android:id="@+id/btCertNum5"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickNum5"
+                android:text="5"
+                android:textColor="@android:color/white"
+                android:textSize="45sp" />
+
+            <Button
+                android:id="@+id/btCertNum6"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickNum6"
+                android:text="6"
+                android:textColor="@android:color/white"
+                android:textSize="45sp" />
+
+            <Button
+                android:id="@+id/btCertNum7"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickNum7"
+                android:text="7"
+                android:textColor="@android:color/white"
+                android:textSize="45sp" />
+
+            <Button
+                android:id="@+id/btCertNum8"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickNum8"
+                android:text="8"
+                android:textColor="@android:color/white"
+                android:textSize="45sp" />
+
+            <Button
+                android:id="@+id/btCertNum9"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickNum9"
+                android:text="9"
+                android:textColor="@android:color/white"
+                android:textSize="45sp" />
+
+            <Button
+                android:id="@+id/btCertNum10"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonripple"
+                android:onClick="onClickNum0"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="45sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameEmergency"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AA000000"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="1100dp"
+            android:layout_height="650dp"
+            android:layout_gravity="center"
+            android:background="@android:color/background_light">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/emergency" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="50dp"
+                android:text="비상버튼을 해제하여 주세요."
+                android:textSize="50sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

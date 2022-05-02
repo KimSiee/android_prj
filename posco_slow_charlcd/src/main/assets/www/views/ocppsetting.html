@@ -1,0 +1,109 @@
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 22. 1. 20. 오후 5:45
+  ~
+  -->
+
+<script src="js/ocppsetting.js"></script>
+<div class="animated fadeIn">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-header">
+                    <b>Ocpp Configuration</b>
+                </div>
+                <div class="card-body">
+                    <form class="form-horizontal" action="" method="post"
+                          enctype="multipart/form-data">
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label" for="ocpp_server_url">Server URL</label>
+                            <div class="col-md-9">
+                                <input class="form-control" id="ocpp_server_url" name="ocpp_server_url"
+                                       type="text" placeholder="wss://"/>
+                                <span class="help-block">Please enter IP or Address of OCPP Server</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label" for="ocpp_cpid">Charger ID</label>
+                            <div class="col-md-9">
+                                <input class="form-control" id="ocpp_cpid" name="ocpp_cpid"
+                                       type="text" placeholder="001"/>
+                                <span class="help-block">Please enter CPID</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label" for="auth_id">Auth ID</label>
+                            <div class="col-md-9">
+                                <input class="form-control" id="auth_id" name="auth_id"
+                                       type="text" placeholder="admin"/>
+                                <span class="help-block">Please enter Basic Auth ID</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label" for="auth_password">Auth Password</label>
+                            <div class="col-md-9">
+                                <input class="form-control" id="auth_password" name="auth_password"
+                                       type="text" placeholder="1234"/>
+                                <span class="help-block">Please enter Basic Auth PassWord</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label" for="charger_serial_num">Charger Point SerialNum</label>
+                            <div class="col-md-9">
+                                <input class="form-control" id="charger_serial_num" name="charger_serial_num"
+                                       type="text" placeholder="1234"/>
+                                <span class="help-block">Please enter ChargerPoint Serial Number</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label" for="use_ocpp">Using OCPP</label>
+                            <div class="col-md-9 mt-1">
+                                <label class="switch switch-label switch-pill switch-primary">
+                                    <input id="use_ocpp" class="switch-input" type="checkbox"
+                                           checked=""/>
+                                    <span class="switch-slider" data-checked="On"
+                                          data-unchecked="Off"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label" for="use_ssl">Using SSL</label>
+                            <div class="col-md-9 mt-1">
+                                <label class="switch switch-label switch-pill switch-primary">
+                                    <input id="use_ssl" class="switch-input" type="checkbox"
+                                           checked=""/>
+                                    <span class="switch-slider" data-checked="On"
+                                          data-unchecked="Off"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label" for="use_basic_auth">Using Auth</label>
+                            <div class="col-md-9 mt-1">
+                                <label class="switch switch-label switch-pill switch-primary">
+                                    <input id="use_basic_auth" class="switch-input" type="checkbox"
+                                           checked=""/>
+                                    <span class="switch-slider" data-checked="On"
+                                          data-unchecked="Off"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="text-danger" id="wrongMsg"></p>
+                </div>
+                <div class="card-footer">
+                    <div class="float-right">
+                        <button class="btn btn-sm btn-primary" type="submit" id="submit">
+                            <i class="fa fa-dot-circle-o"></i> Submit
+                        </button>
+                        <button class="btn btn-sm btn-danger" type="reset" id="reset">
+                            <i class="fa fa-ban"></i> Reset
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

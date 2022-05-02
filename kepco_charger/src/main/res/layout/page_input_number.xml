@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 18. 7. 16 오전 11:48
+  ~
+  -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:layout_width="1142dp"
+            android:layout_height="594dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_number_frame">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="회원카드번호 16자리를 입력하세요"
+                android:textColor="#7c808d"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/tvInputNum"
+                android:layout_width="640dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="76dp"
+                android:gravity="right"
+                android:textColor="#ffffff"
+                android:textSize="54sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="790dp"
+                android:layout_marginTop="60dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btNumBS"
+                    android:layout_width="133dp"
+                    android:layout_height="114dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btsel_bs" />
+
+                <ImageButton
+                    android:id="@+id/btNumRefresh"
+                    android:layout_width="133dp"
+                    android:layout_height="114dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btsel_re" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1000dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="72dp"
+                android:layout_marginTop="210dp"
+                android:orientation="vertical"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btNum1"
+                        android:layout_width="147dp"
+                        android:layout_height="138dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/btsel_num_1" />
+
+                    <ImageButton
+                        android:id="@+id/btNum2"
+                        android:layout_width="147dp"
+                        android:layout_height="138dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/btsel_num_2" />
+
+                    <ImageButton
+                        android:id="@+id/btNum3"
+                        android:layout_width="147dp"
+                        android:layout_height="138dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/btsel_num_3" />
+
+                    <ImageButton
+                        android:id="@+id/btNum4"
+                        android:layout_width="147dp"
+                        android:layout_height="138dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/btsel_num_4" />
+
+                    <ImageButton
+                        android:id="@+id/btNum5"
+                        android:layout_width="147dp"
+                        android:layout_height="138dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/btsel_num_5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btNum6"
+                        android:layout_width="147dp"
+                        android:layout_height="138dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/btsel_num_6" />
+
+                    <ImageButton
+                        android:id="@+id/btNum7"
+                        android:layout_width="147dp"
+                        android:layout_height="138dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/btsel_num_7" />
+
+                    <ImageButton
+                        android:id="@+id/btNum8"
+                        android:layout_width="147dp"
+                        android:layout_height="138dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/btsel_num_8" />
+
+                    <ImageButton
+                        android:id="@+id/btNum9"
+                        android:layout_width="147dp"
+                        android:layout_height="138dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/btsel_num_9" />
+
+                    <ImageButton
+                        android:id="@+id/btNum0"
+                        android:layout_width="147dp"
+                        android:layout_height="138dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/btsel_num_0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btNumOK"
+                        android:layout_width="390dp"
+                        android:layout_height="114dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/btsel_ok" />
+
+                    <ImageButton
+                        android:id="@+id/btNumCancel"
+                        android:layout_width="390dp"
+                        android:layout_height="114dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/btsel_cancel" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

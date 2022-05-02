@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 20. 8. 12 오전 10:15
+  ~
+  -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#083251"
+    tools:context=".PaymentTestActivity" >
+
+    <Button
+        android:id="@+id/btTermReady"
+        android:layout_width="129dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onTermReady"
+        android:text="TermReady"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btTermCheckReq"
+        android:layout_width="130dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onTermCheckReq"
+        android:text="TermCheckReq"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@+id/btTermReady"
+        app:layout_constraintTop_toBottomOf="@+id/btTermReady" />
+
+    <Button
+        android:id="@+id/btCardInfoReq"
+        android:layout_width="130dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="12dp"
+        android:onClick="onCardInfoReq"
+        android:text="CardInfoReq"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@+id/btTermReady"
+        app:layout_constraintTop_toBottomOf="@+id/btTermCheckReq" />
+
+    <Button
+        android:id="@+id/btPayReq"
+        android:layout_width="131dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onPayReq"
+        android:text="PayReq(100)"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@+id/btTermReady"
+        app:layout_constraintTop_toBottomOf="@+id/btCardInfoReq" />
+
+    <Button
+        android:id="@+id/btPayReqG"
+        android:layout_width="131dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="12dp"
+        android:onClick="onPayReq_G"
+        android:text="PayReq_G(100)"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@+id/btTermReady"
+        app:layout_constraintTop_toBottomOf="@+id/btPayReq" />
+
+    <Button
+        android:id="@+id/btCancelPay"
+        android:layout_width="131dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onCancelLastPay"
+        android:text="CancelPay"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@+id/btTermReady"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btGetVersion"
+        android:layout_width="135dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onVersionReq"
+        android:text="GetVersion"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@+id/btCancelPay"
+        app:layout_constraintTop_toBottomOf="@+id/btCancelPay" />
+
+    <Button
+        android:id="@+id/btGetConfig"
+        android:layout_width="135dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onConfigReq"
+        android:text="GetConfig"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@+id/btGetVersion"
+        app:layout_constraintTop_toBottomOf="@+id/btGetVersion" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="458dp"
+        android:layout_height="667dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#080B25"
+        android:text="Result"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

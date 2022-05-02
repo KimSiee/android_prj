@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 20. 2. 26 오후 2:29
+  ~
+  -->
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232323"
+    tools:context="com.joas.minsu_ui.MinsuUIActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/top_img"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvContentView"
+                style="@style/WhiteTextWithShadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="13dp"
+                android:text="EV CHARGING SYSTEM"
+                android:textColor="#808080"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvsubcontentview"
+                style="@style/WhiteTextWithShadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvContentView"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="24dp"
+                android:text="JoongAng Control"
+                android:textColor="#808080"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvVersion"
+                style="@style/WhiteTextWithShadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageCommStatus"
+                android:layout_alignStart="@+id/imageCommStatus"
+                android:text="v1.3"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imageCommStatus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="21dp"
+                android:src="@drawable/commicon_fail"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayout"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/layoutMsg"
+                android:layout_width="1240dp"
+
+                android:layout_height="600dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:alpha="100"
+                android:background="#232323"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/viewsub_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

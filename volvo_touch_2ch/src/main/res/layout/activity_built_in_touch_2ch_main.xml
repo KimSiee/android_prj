@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 20. 11. 3 오전 9:59
+  ~
+  -->
+
+<!-- 1024x600 (LCD) -->
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="720dp"
+    android:background="@drawable/bg_cv"
+    tools:context="com.joas.volvo_touch_2ch.VolvoTouch2chUIActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageCommStatus"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="1135dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/server_off" />
+
+            <TextView
+                android:id="@+id/tvRemoteStartedMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_box"
+                android:paddingStart="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/string_remote_started"
+                android:textColor="?attr/colorAccent"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvReservedMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_box"
+                android:paddingStart="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/string_reserved"
+                android:textColor="?attr/colorAccent"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvVersion"
+                style="@style/WhiteTextWithShadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="95dp"
+                android:layout_marginStart="135dp"
+                android:text="J1909192A"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="542dp"
+            android:layout_below="@+id/relativeLayout"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/layoutSingle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:alpha="100"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#4a8ecb"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/PanelCh1Over"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1">
+
+                        <FrameLayout
+                            android:id="@+id/panelCh1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <FrameLayout
+                                    android:id="@+id/framePageCh1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </FrameLayout>
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/PanelCh2Over"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1">
+
+                        <FrameLayout
+                            android:id="@+id/panelCh2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <FrameLayout
+                                    android:id="@+id/framePageCh2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </FrameLayout>
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

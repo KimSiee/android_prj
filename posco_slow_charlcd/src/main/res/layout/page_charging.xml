@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 17. 12. 5 오후 5:28
+  ~
+  -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="1190dp"
+        android:layout_height="590dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#f6f6f6"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4">
+            <ImageView
+                android:id="@+id/img_charging_circle"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="50dp"
+                android:scaleType="fitXY"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/a13_1" />
+            <TextView
+                android:id="@+id/tvchgtime_chargingview"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="190dp"
+                android:layout_marginTop="180dp"
+                android:fontFamily="@font/modernhmedium"
+                android:gravity="left"
+                android:text="00:00:00"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvchgpwr_chargingview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="220dp"
+                android:fontFamily="@font/modernhmedium"
+                android:gravity="left"
+                android:text="11.01"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvleftime_chargingview"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="190dp"
+                android:layout_marginTop="322dp"
+                android:fontFamily="@font/modernhmedium"
+                android:gravity="left"
+                android:text="00:00:00"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvchargingcost_charging"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="190dp"
+                android:layout_marginTop="500dp"
+                android:fontFamily="@font/modernhmedium"
+                android:gravity="left"
+                android:text="0원"
+                android:textSize="30sp"
+                android:visibility="invisible"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/modernhmedium"
+                android:text="충전 중에는 케이블을\n임의로 분리하지 마십시오."
+                android:textSize="52sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvsubtitle_chargingview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="220dp"
+                android:fontFamily="@font/modernhmedium"
+                android:gravity="left"
+                android:text="충전을 종료하시려면 충전중지 버튼을\n눌러주세요."
+                android:textSize="40sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/btChargingStop_chargingview"
+                android:layout_width="350dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="400dp"
+                android:layout_marginStart="170dp"
+                android:background="@drawable/button_selector"
+                android:text="충전 종료"
+                android:fontFamily="@font/modernhmedium"
+                android:textColor="@android:color/background_light"
+                android:textSize="45sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

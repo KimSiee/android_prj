@@ -1,0 +1,65 @@
+<script src="js/network.js"></script>
+<div class="animated fadeIn"> 
+  <!-- /.row-->
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <strong>Network Setting</strong>
+        </div>
+        <div class="card-body">
+          <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">            
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="selectType">Select Network Type</label>
+              <div class="col-md-9">
+                <select class="form-control" id="selectType" name="selectType">                    
+                  <option value="static">Static IP</option>                    
+                  <option value="dhcp">DHCP</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="ipaddr">IP Address</label>
+              <div class="col-md-9">
+                <input class="form-control" id="ipaddr" type="text" placeholder="192.168.0.100"/>
+                <span class="help-block">Please enter IP Address of Charger</span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="netmask">Netmask</label>
+              <div class="col-md-9">
+                <input class="form-control" id="netmask" name="netmask" type="text"  placeholder="255.255.255.0"/>
+                <span class="help-block">Please enter Netmask of Charger</span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="gateway">Gateway</label>
+              <div class="col-md-9">
+                <input class="form-control" id="gateway" name="gateway" type="text"  placeholder="192.168.0.1"/>
+                <span class="help-block">Please enter Gateway of Charger</span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="dns">DNS</label>
+              <div class="col-md-9">
+                <input class="form-control" id="dns" name="dns" type="text" placeholder="8.8.8.8">
+                <span class="help-block">Please enter DNS of Charger</span>
+              </div>
+            </div>            
+          </form>
+          <p class="text-danger" id="wrongMsg"></p>
+        </div>      
+        <div class="card-footer">
+          <div class="float-right">
+            <button class="btn btn-sm btn-primary" type="submit" id="submit">
+              <i class="fa fa-dot-circle-o"></i> Submit</button>
+            <button class="btn btn-sm btn-danger" type="reset" id="reset">
+              <i class="fa fa-ban"></i> Reset</button>          
+          </div>
+        </div>  
+      <!-- /.col-->
+      </div>
+    <!-- /.row-->
+    </div>
+  </div>  
+</div>  

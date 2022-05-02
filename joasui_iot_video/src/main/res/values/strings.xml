@@ -1,0 +1,43 @@
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 17. 12. 20 오전 10:19
+  ~
+  -->
+
+<resources>
+    <string name="app_name">OCPP</string>
+    <string name="title_activity_slow_iotvideo">MainActivity</string>
+    <string name="title_name">Smart EV Charger</string>
+    <string name="company_name">JoongAng Control</string>
+    <string name="string_btype">B-Type</string>
+    <string name="string_ctype">C-Type</string>
+    <string name="string_authwait">User authorization is in progress. Please wait.</string>
+    <string name="string_cardtag">Please tag your membership card.</string>
+    <string name="string_home">Home</string>
+    <string name="string_connector_wait">Waiting for charging connector to be connected.</string>
+    <string name="string_conector_begin_charging">Charging begins when the connector is connected to the vehicle.</string>
+    <string name="string_select_charging_method">Please select the charging method</string>
+    <string name="string_charging">Charging.</string>
+    <string name="string_charge_amount">Charge amount:</string>
+    <string name="string_charging_time">Charging time:</string>
+    <string name="string_time_remain">Time remaining:</string>
+    <string name="string_finish_charging">Finish</string>
+    <string name="title_finish_charging">Charging Finished</string>
+    <string name="sub_title_finish_charging">Charging has finished. Remove the connector.</string>
+    <string name="string_save">Save</string>
+    <string name="string_hide_kbd">Hide KBD</string>
+    <string name="string_basicset">BASICSET</string>
+    <string name="string_input_admin_password">Input Admin Password</string>
+    <string name="string_password_incorrect">Password is incorrect.</string>
+    <string name="string_comm_monitor">CommMNT</string>
+    <string name="string_hide">Hide</string>
+    <string name="string_connect_car_wait">Waiting for connecting to car</string>
+    <string name="string_finish_app">FinishApp</string>
+    <string name="string_clear">Clear</string>
+    <string name="string_charging_cost">Charging cost:</string>
+    <string name="string_ac3">AC3</string>
+    <string name="string_dcchademo">DC CHAdeMO</string>
+    <string name="string_dccombo">DC COMBO</string>
+</resources>

@@ -1,0 +1,163 @@
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 18. 7. 13 오후 3:52
+  ~
+  -->
+
+<resources>
+    <string name="app_name">kevcs charger</string>
+    <string name="title_activity_moile_charger">MoileChargerActivity</string>
+    <string name="company_name">JoongAng Control</string>
+    <string name="string_btype">B-Type</string>
+    <string name="string_ctype">C-Type</string>
+    <string name="string_authwait">User authorization is in progress. Please wait.</string>
+    <string name="string_cardtag">Please tag your membership card.</string>
+    <string name="string_home">Home</string>
+    <string name="string_connector_wait">Waiting for charging connector to be connected.</string>
+    <string name="string_conector_begin_charging">Charging begins when the connector is connected to the vehicle.</string>
+    <string name="string_select_charging_method">Please select the charging method</string>
+    <string name="string_charging">Charging.</string>
+    <string name="string_charge_amount">Charge amount:</string>
+    <string name="string_charging_time">Charging time:</string>
+    <string name="string_time_remain">Time remaining:</string>
+    <string name="string_finish_charging">Finish</string>
+    <string name="title_finish_charging">Charging Finished</string>
+    <string name="sub_title_finish_charging">Charging has finished. Remove the connector.</string>
+    <string name="string_save">Save</string>
+    <string name="string_hide_kbd">Hide KBD</string>
+    <string name="string_basicset">BASICSET</string>
+    <string name="string_input_admin_password">Input Admin Password</string>
+    <string name="string_password_incorrect">Password is incorrect.</string>
+    <string name="string_comm_monitor">CommMNT</string>
+    <string name="string_hide">Hide</string>
+    <string name="string_connect_car_wait">Waiting for connecting to car</string>
+    <string name="string_finish_app">FinishApp</string>
+    <string name="string_clear">Clear</string>
+    <string name="string_charging_cost">Charging cost:</string>
+    <string name="string_ac3">AC3</string>
+    <string name="string_dcchademo">DC CHAdeMO</string>
+    <string name="string_dccombo">DC COMBO</string>
+
+    <string name="faultstr_406_inp_stack_overtemp">입력 스택 과온도 발생</string>
+    <string name="title_activity_slow_iotvideo">MainActivity</string>
+    <string name="faultstr_406_diaode_stack_overtemp">다이오드 스택 과온도 발생</string>
+    <string name="faultstr_406_out_stack_overtemp">출력 스택 과온도 발생</string>
+    <string name="faultstr_406_trans_overtemp">트랜스/리액터 과온도 발생</string>
+    <string name="faultstr_406_emergency_button">비상스위치 동작</string>
+    <string name="faultstr_406_coupler_lock_err">충전 커플러 잠김상태 불량</string>
+    <string name="faultstr_406_pilot_signal_err">파일럿 신호 오류</string>
+    <string name="faultstr_406_out_fuse_err">출력단 퓨즈 상태이상</string>
+    <string name="faultstr_406_mc_err">MC 오류</string>
+    <string name="faultstr_406_line_insulation_err">선간절연 이상</string>
+    <string name="faultstr_406_plc_comm_err">PLC 통신 fail</string>
+    <string name="faultstr_406_dclink_overvoltage">DC 링크 과전압</string>
+    <string name="faultstr_406_dclink_lowvoltage">DC 링크 저전압</string>
+    <string name="faultstr_406_inp_a_overcurrent">입력 A상 과전류 발생</string>
+    <string name="faultstr_406_inp_b_overcurrent">입력 B상 과전류 발생</string>
+    <string name="faultstr_406_charging_system_err">충전 시스템 오류</string>
+
+    <string name="faultstr_407_car_batt_overvoltage">차량 배터리 과전압 오류(차량간 협상 실패)</string>
+    <string name="faultstr_407_car_batt_lowvoltage">차량 배터리 저전압 오류(차량간 협상 실패)</string>
+    <string name="faultstr_407_ct1_overcurrent">CT1 과전류 발생</string>
+    <string name="faultstr_407_ct2_overcurrent">CT2 과전류 발생</string>
+    <string name="faultstr_407_ct3_overcurrent">CT3 과전류 발생</string>
+    <string name="faultstr_407_ct4_overcurrent">CT4 과전류 발생</string>
+    <string name="faultstr_407_ct5_overcurrent">CT5 과전류 발생</string>
+    <string name="faultstr_407_gate_driver_u_err">게이트 드라이버 U 오류</string>
+    <string name="faultstr_407_gate_driver_v_err">게이트 드라이버 V 오류</string>
+    <string name="faultstr_407_gate_driver_w_err">게이트 드라이버 W 오류</string>
+    <string name="faultstr_407_gate_driver_p_err">게이트 드라이버 P 오류</string>
+    <string name="faultstr_407_gate_driver_n_err">게이트 드라이버 N 오류</string>
+    <string name="faultstr_407_gate_driver_err">게이트 드라이버 오류</string>
+    <string name="faultstr_407_board_inp_voltage_15vd_err">보드 입력전원 오류(+15VD)</string>
+    <string name="faultstr_407_board_inp_voltage_15v_err">보드 입력전원 오류(+15V)</string>
+
+    <string name="faultstr_408_board_inp_voltage_24v_err">보드 입력전원 오류(+24V)</string>
+    <string name="faultstr_408_board_inp_voltage_n15v_err">보드 입력전원 오류(-15V)</string>
+    <string name="faultstr_408_out_overvoltage_combo">출력 과전압오류(DC 콤보)</string>
+    <string name="faultstr_408_inp_freq_error">입력전원 주파수 이상</string>
+    <string name="faultstr_408_charging_current_gap_error">충전전류 편차 오류(차량간 협상 실패)</string>
+    <string name="faultstr_408_charging_voltage_gap_error">충전전압 범위/편차 오류(차량간 협상 실패)</string>
+    <string name="faultstr_408_charging_system_compatibility_err">충전시스템 호환성 문제 오류(차량간 협상 실패)</string>
+    <string name="faultstr_408_inp_lowvoltage_vab">입력 저전압 발생(Vab)(주전원 차단기 동작)</string>
+    <string name="faultstr_408_inp_lowvoltage_vbc">입력 저전압 발생(Vbc)</string>
+    <string name="faultstr_408_vd_error">Vd error</string>
+    <string name="faultstr_408_plus_vq_error">+Vq error</string>
+    <string name="faultstr_408_minus_vq_error">-Vq error</string>
+    <string name="faultstr_408_car_battery_temp_error">차량 배터리 온도문제 발생(차량간 협상 실패)</string>
+    <string name="faultstr_408_overvoltage">과전압</string>
+    <string name="faultstr_408_out_overvoltage_chademo">출력 과전압 오류(차데모)</string>
+
+    <string name="faultstr_409_chademo_relay_fusion">차데모 출력릴레이 융착 발생</string>
+    <string name="faultstr_409_combo_relay_fusion">콤보 출력릴레이 융착 발생</string>
+    <string name="faultstr_409_ui_dsp_comm_err">UI-DSP간 통신 오류</string>
+    <string name="faultstr_409_charger_car_comm_err">충전기에서 차량으로 통신 미전송(차량간 협상 실패)</string>
+    <string name="faultstr_409_control_board_err">제어보드 Error</string>
+    <string name="faultstr_409_inp_overvoltage_vbc">입력 과전압 발생(Vbc)</string>
+    <string name="faultstr_409_module_err_1">모듈 이상#1</string>
+    <string name="faultstr_409_overcurrent">과전류</string>
+    <string name="faultstr_409_precharge_1">프리차지 오류 #1</string>
+    <string name="faultstr_409_precharge_2">프리차지 오류 #2</string>
+    <string name="faultstr_409_precharging_err">Pre-charging 오류</string>
+    <string name="faultstr_409_module_err_2">모듈 이상 #2</string>
+    <string name="faultstr_409_combo_connector_overtemp">콤보커넥터 과온도 발생</string>
+    <string name="faultstr_409_combo_connector_lock">콤보커넥터 잠김 오류</string>
+    <string name="faultstr_409_module_err_3">모듈 이상 #3</string>
+    <string name="faultstr_409_module_err_4">모듈 이상 #4</string>
+
+    <string name="faultstr_416_emergency_bt">비상스위치 동작</string>
+    <string name="faultstr_416_car_battery_system_err">차량 배터리 시스템 오류(차량간 협상 실패)</string>
+    <string name="faultstr_416_rcd_off">차단기(RCD) OFF 상태</string>
+    <string name="faultstr_416_temperature_err">온도 이상</string>
+    <string name="faultstr_416_out_overcurrent">출력 과전류 발생(Iout)</string>
+    <string name="faultstr_416_main_breaker">주전원 차단기 동작</string>
+    <string name="faultstr_416_mc_fusion">MC 융착</string>
+    <string name="faultstr_416_cp_fail">CP fail</string>
+    <string name="faultstr_416_car_gear_stat">차량 기어상태 확인(P)(차량간 협상 실패)</string>
+    <string name="faultstr_416_can_comm_err">CAN 통신 Fail</string>
+    <string name="faultstr_416_meter_comm_err">전력량계 통신 오류</string>
+    <string name="faultstr_416_dsp_eim_comm_err">DSP-EIM간 통신 오류</string>
+    <string name="faultstr_416_module_control_comm_err">충전모듈-컨트롤보드간 통신 오류</string>
+    <string name="faultstr_416_bms_voltage_err">BMS 전압상태 오류</string>
+    <string name="faultstr_416_car_bms_err">차량상태/BMS 오류</string>
+    <string name="faultstr_416_internal_voltage_test_err">충전기 자체 전압테스트 오류</string>
+
+    <string name="faultstr_423_0_emergency_bt">비상스위치 동작</string>
+    <string name="faultstr_423_1_mc1_err">MC1 접점에러 or 융착</string>
+    <string name="faultstr_423_2_mc2_err">MC2 접점에러 or 융착</string>
+    <string name="faultstr_423_3_mc3_err">MC3 접점에러 or 융착</string>
+    <string name="faultstr_423_4_relay1_err">Relay1 접점에러 or 융착</string>
+    <string name="faultstr_423_5_relay2_err">Relay2 접점에러 or 융착</string>
+    <string name="faultstr_423_6_relay3_err">Relay3 접점에러 or 융착</string>
+    <string name="faultstr_423_7_relay4_err">Relay3 접점에러 or 융착</string>
+    <string name="faultstr_423_9_inp_overvoltage">입력 과전압 발생</string>
+    <string name="faultstr_423_10_temperature_err">온도 이상</string>
+    <string name="faultstr_423_11_module_control_comm_err">충전모듈-컨트롤보드간 통신 오류</string>
+    <string name="faultstr_423_12_crtlboard1_ctrlboard2_comm_err">컨트롤보드1 - 컨트롤보드2 통신오류</string>
+    <string name="faultstr_423_13_meter_comm_err">전력량계 1 오류</string>
+    <string name="faultstr_423_14_meter_comm_err">전력량계 2 오류</string>
+    <string name="faultstr_423_15_inp_lowvoltage">입력 저전압 발생</string>
+
+
+    <string name="faultstr_425_0_rcd_off">차단기(RCD) OFF 상태</string>
+    <string name="faultstr_425_1_ac_relay_err">AC relay 상태이상</string>
+    <string name="faultstr_425_2_ac_leak">AC 누설 발생</string>
+    <string name="faultstr_425_3_ac_rcm_err">AC RCM 불량</string>
+    <string name="faultstr_425_4_out_overcurrent">출력 과전류 발생(Iout)</string>
+    <string name="faultstr_425_5_ac_fg_err">AC FG 불량</string>
+    <string name="faultstr_425_6_ac_cp_error">AC CP 에러</string>
+
+
+    <string name="string_emergency_title">비상 버턴을 해제하여 주세요</string>
+    <string name="string_fault_title">오류 발생!</string>
+    <string name="str_tag_finish_charging">충전을 끝내시려면 카드를 테깅하세요</string>
+    <string name="str_auth_fail_title">인증 실패</string>
+    <string name="str_auth_fail_content">"카드 인증에 실패하였습니다.
+확인하시고 다시 시도해 주시기 바랍니다."</string>
+    <string name="str_hard_reset_title">Hard Reset</string>
+    <string name="str_hard_reset_content">원격에서 리셋 명령으로 인하여 재부팅이 진행됩니다</string>
+    <string name="str_soft_reset_title">Soft Reset</string>
+    <string name="str_soft_reset_content">원격에서 "Soft Reset" 명령으로 인하여 초기화됩니다</string>
+</resources>

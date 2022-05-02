@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="SmartCharger.app" target="11" />
+      <module name="SmartCharger.certtest" target="11" />
+      <module name="SmartCharger.certtestfast" target="11" />
+      <module name="SmartCharger.certtestfast_v2" target="11" />
+      <module name="SmartCharger.evcomm" target="11" />
+      <module name="SmartCharger.gridwiz_slow_charlcd" target="11" />
+      <module name="SmartCharger.j14_touch_2ch" target="11" />
+      <module name="SmartCharger.j14_touch_2ch_comm" target="11" />
+      <module name="SmartCharger.jejuev_comm" target="11" />
+      <module name="SmartCharger.jejuev_slow_charlcd" target="11" />
+      <module name="SmartCharger.joashw" target="11" />
+      <module name="SmartCharger.joasui_iot_video" target="11" />
+      <module name="SmartCharger.joasui_mobile_charger_2ch" target="11" />
+      <module name="SmartCharger.joasui_simple_charger" target="11" />
+      <module name="SmartCharger.joasutils" target="11" />
+      <module name="SmartCharger.kepco_charger" target="11" />
+      <module name="SmartCharger.kepco_charger_charlcd" target="11" />
+      <module name="SmartCharger.kepcocomm" target="11" />
+      <module name="SmartCharger.kevcs_charger" target="11" />
+      <module name="SmartCharger.kevcs_charger_charlcd" target="11" />
+      <module name="SmartCharger.kevcscomm" target="11" />
+      <module name="SmartCharger.kt_wallbox" target="11" />
+      <module name="SmartCharger.minsu_comm" target="11" />
+      <module name="SmartCharger.minsu_slow" target="11" />
+      <module name="SmartCharger.ocppcomm" target="11" />
+      <module name="SmartCharger.ocppui" target="11" />
+      <module name="SmartCharger.ocppui_chargev" target="11" />
+      <module name="SmartCharger.ocppui_dubai_2ch" target="11" />
+      <module name="SmartCharger.ocppui_dubai_slow" target="11" />
+      <module name="SmartCharger.ocppui_ess_modbus" target="11" />
+      <module name="SmartCharger.ocppui_kevcs" target="11" />
+      <module name="SmartCharger.ocppui_namboo" target="11" />
+      <module name="SmartCharger.ocppui_tardis" target="11" />
+      <module name="SmartCharger.paymenttestui" target="11" />
+      <module name="SmartCharger.posco_comm" target="11" />
+      <module name="SmartCharger.posco_slow_charlcd" target="11" />
+      <module name="SmartCharger.posco_ui_wallbox" target="11" />
+      <module name="SmartCharger.volvo_touch_2ch" target="11" />
+      <module name="SmartCharger.volvo_touch_2ch_comm" target="11" />
+      <module name="SmartCharger.wsclient" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

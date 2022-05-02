@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 18. 1. 9 오후 4:54
+  ~
+  -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="1190dp"
+        android:layout_height="590dp"
+        android:background="#f6f6f6"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="600dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_marginStart="285dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/modernhmedium"
+            android:text="충전 요금 정산"
+            android:background="@drawable/edge_gray"
+            android:textSize="45sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvmsg_payment"
+            android:layout_width="1025dp"
+            android:layout_height="310dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/modernhmedium"
+            android:gravity="center"
+            android:text="충전금액을 정산중입니다.\n잠시만 기다려주세요."
+            android:background="@drawable/edge_whilesmoke"
+            android:padding="30dp"
+            android:textSize="37sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

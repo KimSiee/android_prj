@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 17. 12. 20 오전 11:27
+  ~
+  -->
+
+<resources>
+    <string name="title_name">전기자동차 충전기</string>
+    <string name="company_name">중앙제어 주식회사</string>
+    <string name="string_btype">B-Type</string>
+    <string name="string_ctype">C-Type</string>
+    <string name="app_name">OCPP</string>
+    <string name="string_authwait">사용자 인증 중입니다. 잠시만 기다려 주세요.</string>
+    <string name="string_cardtag">회원 카드를 태그해 주시기 바랍니다.</string>
+    <string name="string_home">처음으로</string>
+    <string name="string_connector_wait">충전 커넥터 연결 대기중입니다.</string>
+    <string name="string_conector_begin_charging">차량에 커넥터를 연결하면 충전이 시작됩니다.</string>
+    <string name="string_select_charging_method">적합한 충전 방식을 선택해 주십시요.</string>
+    <string name="string_charging">충전중입니다.</string>
+    <string name="string_charge_amount">충전량:</string>
+    <string name="string_charging_time">충전시간:</string>
+    <string name="string_time_remain">남은시간:</string>
+    <string name="string_finish_charging">충전종료</string>
+    <string name="title_finish_charging">충전 종료</string>
+    <string name="sub_title_finish_charging">충전이 완료되었습니다. 커넥터를 분리하세요.</string>
+    <string name="string_save">저장하기</string>
+    <string name="string_hide_kbd">키보드숨기기</string>
+    <string name="string_basicset">기본세팅</string>
+    <string name="string_input_admin_password">관리자 암호를 입력하세요.</string>
+    <string name="string_password_incorrect">패스워드가 잘못되었습니다.</string>
+    <string name="string_comm_monitor">통신모니터</string>
+    <string name="string_hide">숨기기</string>
+    <string name="string_connect_car_wait">차량 연결을 기다리고 있습니다.</string>
+    <string name="string_finish_app">App 종료</string>
+    <string name="string_clear">모두지우기</string>
+    <string name="string_charging_cost">충전 금액:</string>
+    <string name="string_ac3">AC3</string>
+    <string name="string_dcchademo">DC 차데모</string>
+    <string name="string_dccombo">DC 콤보</string>
+</resources>

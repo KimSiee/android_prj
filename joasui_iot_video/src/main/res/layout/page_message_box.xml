@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 JoongAng Control, Inc - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  ~ Written by Sungchul Choi <scchoi@joas.co.kr>, 17. 12. 5 오후 4:37
+  ~
+  -->
+
+<android.widget.FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="700dp"
+    android:layout_margin="0dp"
+    android:clickable="true"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000">
+
+        <RelativeLayout
+            android:layout_width="800dp"
+            android:layout_height="500dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="41dp"
+            android:background="@android:color/background_light"
+            android:elevation="15dp">
+
+            <TextView
+                android:id="@+id/tvMessageBoxTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="53dp"
+                android:text="MSG TITLE"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvMessageBoxContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMessageBoxTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="58dp"
+                android:text="SUB MSG"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.widget.FrameLayout>
