@@ -24,9 +24,6 @@ import com.joas.ocppui.UIFlowManager;
 import com.joas.utils.TimeoutHandler;
 import com.joas.utils.TimeoutTimer;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
 public class ChargingView extends LinearLayout implements PageActivateListener {
     UIFlowManager flowManager;
     TimeoutTimer timer = null;
@@ -161,7 +158,8 @@ public class ChargingView extends LinearLayout implements PageActivateListener {
     }
 
     void onStopClickTag() {
-        flowManager.onCardTagEvent("1010010071615448", true);
+//        flowManager.onCardTagEvent("1010010071615448", true);
+        flowManager.onChargingStop();
     }
 
     public void onChargingStop() {

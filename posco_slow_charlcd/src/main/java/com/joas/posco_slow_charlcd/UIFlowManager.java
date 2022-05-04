@@ -255,10 +255,12 @@ public class UIFlowManager implements PoscoCommManagerListener, PoscoModemCommMa
 
     public void setOcppStatus(int connectorId, StatusNotification.Status status) {
         StatusNotification.Status oldStatus = chargeData.ocppStatus;
-        if ( oldStatus != status ) {
-            chargeData.ocppStatus = status;
-            ocppSessionManager.SendStatusNotificationRequest(connectorId, chargeData.ocppStatus, chargeData.ocppStatusError );
-        }
+//        if ( oldStatus != status ) {
+//            chargeData.ocppStatus = status;
+//            ocppSessionManager.SendStatusNotificationRequest(connectorId, chargeData.ocppStatus, chargeData.ocppStatusError );
+//        }
+        chargeData.ocppStatus = status;
+        ocppSessionManager.SendStatusNotificationRequest(connectorId, chargeData.ocppStatus, chargeData.ocppStatusError );
     }
 
     /**

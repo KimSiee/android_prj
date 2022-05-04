@@ -520,28 +520,38 @@ public class UIFlowManager implements RfidReaderListener, DSPControl2Listener, O
 
         }
 
-        if ( isRemoteStarted ) {
-            // 원격 시작이면 이미 session은 시작되었음. startSession을 따로 하지 않는다.
-            // 바로 커넥터 연결화면으로 간다.
-            setUIFlowState(UIFlowState.UI_CONNECTOR_WAIT);
-            // 이미 Connect 된 상태이라면
-            if ( isDspPlug ) {
-                onConnectedCableEvent(true);
-            } else {
-                // changePage가 하나의 함수에서 2번이상 불려지면. UI Thread로 인한 문제가 발생할 소지가 있음
-                pageManger.changePage(PageID.CONNECTOR_WAIT);
-            }
-        }
-        else {
-            // OCPP Session Start
-            ocppSessionManager.startSession(chargeData.curConnectorId);
+        if(cpConfig.isAuthSkip)
+        {
+            dspControl.setState216(chargeData.dspChannel, DSPTxData2.STATUS216.FREE_MODE, true);     //무료모드
 
-            // Next Flow. Card Tag
-            setUIFlowState(UIFlowState.UI_CARD_TAG);
-            pageManger.changePage(PageID.CARD_TAG);
+            setUIFlowState(UIFlowState.UI_CONNECTOR_WAIT);
+            doAuthComplete();
+        }
+        else{
+            if ( isRemoteStarted ) {
+                // 원격 시작이면 이미 session은 시작되었음. startSession을 따로 하지 않는다.
+                // 바로 커넥터 연결화면으로 간다.
+                setUIFlowState(UIFlowState.UI_CONNECTOR_WAIT);
+                // 이미 Connect 된 상태이라면
+                if ( isDspPlug ) {
+                    onConnectedCableEvent(true);
+                } else {
+                    // changePage가 하나의 함수에서 2번이상 불려지면. UI Thread로 인한 문제가 발생할 소지가 있음
+                    pageManger.changePage(PageID.CONNECTOR_WAIT);
+                }
+            }
+            else {
+                // OCPP Session Start
+                ocppSessionManager.startSession(chargeData.curConnectorId);
+
+                // Next Flow. Card Tag
+                setUIFlowState(UIFlowState.UI_CARD_TAG);
+                pageManger.changePage(PageID.CARD_TAG);
 
 //            rfidReader.rfidReadRequest();
+            }
         }
+
 
 //        setOcppStatus(chargeData.curConnectorId, StatusNotification.Status.PREPARING);
     }

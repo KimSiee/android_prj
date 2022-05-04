@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * 시작할 어플리케이션을 컴파일시에 정한다. Module App의 Dependency에 해당 모듈에 포함되어 있어야 함!
      */
-//    String callActivity = ACTIVITY_POSCO_SLOW_CHARLCD_UI;
+    String callActivity = ACTIVITY_POSCO_SLOW_CHARLCD_UI;
     //String callActivity = ACTIVITY_JEJUEV_SLOW_CHARLCD_UI;
     //String callActivity = ACTIVITY_JOAS_IOT_VIDEO_UI;
     //String callActivity = ACTIVITY_KT_WALLBOX_UI;
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 //    String callActivity = ACTIVITY_OCPP_CHARGEV_UI;
 //    String callActivity = ACTIVITY_OCPP_KEVCS_UI;
 //    String callActivity = ACTIVITY_OCPP_NAMBOO_UI;
-    String callActivity = ACTIVITY_OCPP_TARDIS_UI;
+//    String callActivity = ACTIVITY_OCPP_TARDIS_UI;
 //    String callActivity = ACTIVITY_KEPCO_UI;
 //    String callActivity = ACTIVITY_KEPCO_CAHRLCD_UI;
 //    String callActivity = ACTIVITY_OCPP_DUBAI_SLOW_UI;
