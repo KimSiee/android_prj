@@ -612,7 +612,7 @@ public class UIFlowManager implements RfidReaderListener, DSPControl2Listener, O
 
                 }
             } else if (flowState == UIFlowState.UI_CHARGING) {
-                if(chargeData.serverStat){
+                if((chargeData.serverStat) && (!tagNum.equals(lastCardNum))){
                     ocppSessionManager.authorizeRequest(chargeData.curConnectorId, tagNum);
                 }
                 else{

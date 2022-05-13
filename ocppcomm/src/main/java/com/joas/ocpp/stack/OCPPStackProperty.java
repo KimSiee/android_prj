@@ -29,11 +29,11 @@ public class OCPPStackProperty {
 
 	// Boot Notification Info
 	public String chargePointVender = "JOAS";
-	public String chargePointModel	= "JC9000S";
+	public String chargePointModel	= "JC-92C1-7-0P";
 	public String chargePointSerialNumber = "0000001";
 	public String chargeBoxSerialNumber = "0000001";
 	public String firmwareVersion 	= "0.0.1";
-	public String meterType		  	= "DC";
+	public String meterType		  	= "AC";
 	public String meterSerialNumber = "0000001";
 
 	/**
