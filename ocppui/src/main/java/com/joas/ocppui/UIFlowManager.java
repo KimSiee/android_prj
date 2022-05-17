@@ -203,7 +203,16 @@ public class UIFlowManager implements RfidReaderListener, DSPControl2Listener, O
         startPeroidTimerSec();
         initStartState();
 
+        setSlowChargerType(9);
         dispMeteringString(new String[]{"Welcome! EV", "Disconnected", "Connecting..."});
+    }
+    /***
+     * 2022-04-18 추가 : 완속충전기 타입 적용기능
+     * UI에 설정된 값으로 202번지 write
+     * @param slowChargerType
+     */
+    public void setSlowChargerType(int slowChargerType){
+        dspControl.setSlowChargerType(chargeData.dspChannel,slowChargerType);
     }
 
     void destoryManager() {

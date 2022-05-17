@@ -332,8 +332,8 @@ public class OCPPStack implements TransceiverListener{
 
 	public void sendDataTransferRequest(String data){
 		DataTransfer dataTransfer = new DataTransfer();
-		dataTransfer.setVendorId("kr.co,joas.wwww");
-		dataTransfer.setMessageId("unitpricereq");
+		dataTransfer.setVendorId("kr.co.joas.www");
+		dataTransfer.setMessageId("unitprice.req");
 		dataTransfer.setData(data);
 
 		OCPPMessage message = new OCPPMessage("DataTransfer",dataTransfer);
