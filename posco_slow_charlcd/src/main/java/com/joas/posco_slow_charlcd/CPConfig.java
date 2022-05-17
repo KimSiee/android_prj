@@ -58,12 +58,12 @@ public class CPConfig {
     public String settingPassword = "1234";
     public boolean isAuthSkip = false;
     public boolean useWatchDogTimer = false;
-    public boolean useTL3500BS = false;
+    public boolean useTL3500BS = true;
     public boolean useSehanRF = false;
-    public boolean useACMRF = true;
-    public boolean useKakaoNavi = false;
-    public boolean useKakaoCost = false;
-    public String chargerKind = "CL";
+    public boolean useACMRF = false;
+    public boolean useKakaoNavi = true;
+    public boolean useKakaoCost = true;
+    public String chargerKind = "OP";
     public int  kakaoQRCost = 250;
     public int kakaoCreditCost = 420;
 

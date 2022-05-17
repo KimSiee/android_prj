@@ -754,10 +754,10 @@ public class UIFlowManager implements PoscoCommManagerListener, PoscoModemCommMa
     }
 
     void setUIversionAndModelName(){
-        TypeDefine.SW_VERSION = "220324("+cpConfig.chargerKind+")";
+        TypeDefine.SW_VERSION = "220516("+cpConfig.chargerKind+")";
 //        poscoChargerInfo.chg_sw_version = "UI:1.3 20220204(" + cpConfig.chargerKind + ")     CO:1.3 20220204 ";
-        poscoChargerInfo.chg_sw_version = "UI:1.3 20220324(" + cpConfig.chargerKind + ")";
-        TypeDefine.SW_RELEASE_DATE = "2022-03-24";
+        poscoChargerInfo.chg_sw_version = "UI:1.3 20220516(" + cpConfig.chargerKind + ")";
+        TypeDefine.SW_RELEASE_DATE = "2022-05-16";
         if(cpConfig.chargerKind.equals("OP") || cpConfig.chargerKind.equals("CV")) {
             TypeDefine.MODEL_NAME = "JC-9111KE-TP-BC";
         }

@@ -193,7 +193,7 @@ public class SettingView extends LinearLayout implements PageActivateListener {
     }
 
     void onDataTransferReqTest(){
-        flowManager.getOcppSessionManager().SendDataTransferReq("hello data transfer testing..");
+        flowManager.getOcppSessionManager().SendDataTransferReq("");
     }
 
     void onExitClick() {

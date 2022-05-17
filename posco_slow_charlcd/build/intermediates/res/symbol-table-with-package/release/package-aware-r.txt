@@ -1047,6 +1047,17 @@ id relativeLayout2
 id relativeLayout4
 id relativeLayout5
 id relativeLayout_timeselect
+id rgChargerType
+id rg_btn0
+id rg_btn1
+id rg_btn2
+id rg_btn3
+id rg_btn4
+id rg_btn5
+id rg_btn6
+id rg_btn7
+id rg_btn8
+id rg_btn9
 id right
 id right_icon
 id right_side
@@ -1085,6 +1096,7 @@ id start
 id status_bar_latest_event_content
 id submenuarrow
 id submit_area
+id swUseOcppBasicAuth
 id switchSettingACMRFUse
 id switchSettingKakaoUse
 id switchSettingSehanRFUse
@@ -1092,6 +1104,7 @@ id switchSettingSkipAuth
 id switchSettingTL3500Use
 id switchSettingUseKakaoCost
 id switchSettingUseOcpp
+id switchSettingUseOcppSSL
 id switchSettingWatchDogUse
 id tabMode
 id tag_transition_group
@@ -1100,6 +1113,7 @@ id text2
 id textSettingBasicAuthID
 id textSettingBasicAuthPassword
 id textSettingChargerID
+id textSettingChargerPointSerialNum
 id textSettingCreditCost
 id textSettingLastError
 id textSettingLocalIP
@@ -1185,6 +1199,7 @@ id tvMsg_cancelpay
 id tvMsg_prepay
 id tvMsg_realpay
 id tvOcppBasicPwdTitle
+id tvOcppchpointinfo
 id tvOcppcidTitle
 id tvQRCost
 id tvRemoteStartedMsg

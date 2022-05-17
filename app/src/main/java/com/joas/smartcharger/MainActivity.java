@@ -81,8 +81,8 @@ public class MainActivity extends AppCompatActivity {
 //    String callActivity = ACTIVITY_GRIDWIZ_SLOW_CHARLCD_UI;
 //    String callActivity = ACTIVITY_JC92C170P_SLOW_CHARLCD_UI;
 
-//    String callActivity = ACTIVITY_OCPP_UI;
-    String callActivity = ACTIVITY_OCPP_CHARGEV_UI;
+    String callActivity = ACTIVITY_OCPP_UI;
+//    String callActivity = ACTIVITY_OCPP_CHARGEV_UI;
 //    String callActivity = ACTIVITY_OCPP_KEVCS_UI;
 //    String callActivity = ACTIVITY_OCPP_NAMBOO_UI;
 //    String callActivity = ACTIVITY_OCPP_TARDIS_UI;

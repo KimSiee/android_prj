@@ -48,6 +48,7 @@
         <entry key="..\:/project/SmartCharger/android/SmartCharger/ocppui/src/main/res/layout/page_dsp_monitor.xml" value="0.262109375" />
         <entry key="..\:/project/SmartCharger/android/SmartCharger/ocppui/src/main/res/layout/page_setting.xml" value="0.25" />
         <entry key="..\:/project/SmartCharger/android/SmartCharger/ocppui/src/main/res/layout/page_unavailable_con.xml" value="0.265234375" />
+        <entry key="..\:/project/SmartCharger/android/SmartCharger/ocppui_tardis/src/main/res/layout/page_setting.xml" value="0.262109375" />
         <entry key="..\:/project/SmartCharger/android/SmartCharger/posco_slow_charlcd/src/main/res/layout/activity_ocpp_main.xml" value="0.265234375" />
         <entry key="..\:/project/SmartCharger/android/SmartCharger/posco_slow_charlcd/src/main/res/layout/list_comm_packet_list.xml" value="0.33" />
         <entry key="..\:/project/SmartCharger/android/SmartCharger/posco_slow_charlcd/src/main/res/layout/page_comm_monitor.xml" value="0.5" />

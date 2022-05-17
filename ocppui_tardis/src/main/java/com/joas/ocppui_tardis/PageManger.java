@@ -18,7 +18,6 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
-import com.joas.ocppui_tardis.R;
 import com.joas.ocppui_tardis.page.AdminPasswordInputView;
 import com.joas.ocppui_tardis.page.AuthWaitView;
 import com.joas.ocppui_tardis.page.CardTagView;
@@ -150,7 +149,8 @@ public class PageManger {
             changePage(PageID.SELECT_FAST);
         }
         else {
-            changePage(PageID.SELECT_SLOW);
+            if(flowManager.mconfig.lcdType.equals("None")) changePage(PageID.SELECT_SLOW);
+            else changePage(PageID.CARD_TAG);
         }
     }
 

@@ -45,7 +45,7 @@ public class CPConfig {
     public boolean useWatchDogTimer = false;
     public boolean isFastCharger = false;
     public boolean useTrustCA = false;
-    public boolean isAvailable = false;
+    public boolean isAvailable = true;
     public String opModeConnectorID = "0";
 
     public CPConfig() {

@@ -427,11 +427,35 @@
                             android:id="@+id/switchSettingUseOcpp"
                             android:layout_width="0dp"
                             android:layout_height="40dp"
-                            android:layout_weight="0.5"
+                            android:layout_weight="0.4"
                             android:checked="false"
                             android:paddingLeft="5dp"
                             android:splitTrack="false"
                             android:text="Ocpp 사용"
+                            android:textColor="#818181"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                        <Switch
+                            android:id="@+id/switchSettingUseOcppSSL"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.4"
+                            android:checked="false"
+                            android:paddingLeft="5dp"
+                            android:splitTrack="false"
+                            android:text="Ocpp SSL 사용"
+                            android:textColor="#818181"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                        <Switch
+                            android:id="@+id/swUseOcppBasicAuth"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.5"
+                            android:checked="false"
+                            android:paddingLeft="5dp"
+                            android:splitTrack="false"
+                            android:text="Ocpp Basic Auth 사용"
                             android:textColor="#818181"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -545,6 +569,35 @@
 
                         <EditText
                             android:id="@+id/textSettingBasicAuthPassword"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:ems="10"
+                            android:inputType="textUri"
+                            android:text="joas" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/setting_list_border"
+                        android:divider="@drawable/setting_list_border"
+                        android:orientation="horizontal"
+                        android:showDividers="middle">
+
+                        <TextView
+                            android:id="@+id/tvOcppchpointinfo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:paddingLeft="5dp"
+                            android:text="ChargerPoint SerialNum"
+                            android:textColor="#818181"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/textSettingChargerPointSerialNum"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.7"
@@ -907,7 +960,113 @@
 
                             </TableRow>
                         </TableLayout>
-
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/setting_list_border"
+                            android:divider="@drawable/setting_list_border"
+                            android:orientation="horizontal"
+                            android:showDividers="middle"
+                            android:layout_marginTop="20dp"
+                            >
+                            <RadioGroup
+                                android:id="@+id/rgChargerType"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+                                <RadioButton
+                                    android:id="@+id/rg_btn0"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:textColor="#818181"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:text="빌트인 2ch(14kw)"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rg_btn1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:textColor="#818181"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:text="스탠드 동시 2ch(14kw)"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rg_btn2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:textColor="#818181"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:text="스탠드 분산 2ch(14kw)"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rg_btn3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:textColor="#818181"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:text="스탠드 분산 2ch(17.6kW)"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rg_btn4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:textColor="#818181"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:text="스탠드 1ch(14kW)"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rg_btn5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:textColor="#818181"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:text="스탠드 1ch(17.6kW)"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rg_btn6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:textColor="#818181"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:text="스탠드 1ch(22kW)"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rg_btn7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:textColor="#818181"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:text="JC-92C1-7-01[ 4.3inch_LCD_TOUCH_7kw_B_C type ]"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rg_btn8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:textColor="#818181"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:text="JC-92B1-7-01[ 8inch_LCD_TOUCH_7kw_C type ]"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rg_btn9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:textColor="#818181"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:text="JC-92B1-11-01[ 4.3inch_LCD_TOUCH_11kw_C type ]"
+                                    />
+                            </RadioGroup>
+                        </LinearLayout>
                     </LinearLayout>
                 </ScrollView>
 

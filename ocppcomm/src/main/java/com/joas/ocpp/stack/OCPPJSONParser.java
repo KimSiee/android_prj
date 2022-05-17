@@ -38,10 +38,10 @@ public class OCPPJSONParser extends OCPPMessageParser {
 
 	private boolean hasLongDateFormat = false;
 	private static final String DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss'Z'";
-//	private static final String DATE_FORMAT_WITH_MS = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
-	private static final String DATE_FORMAT_WITH_MS = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ";		//edit by si.
-//	private static final int DATE_FORMAT_WITH_MS_LENGTH = 24;
-	private static final int DATE_FORMAT_WITH_MS_LENGTH = 29;				//edit by si.
+	private static final String DATE_FORMAT_WITH_MS = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
+//	private static final String DATE_FORMAT_WITH_MS = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ";		//edit by si.
+	private static final int DATE_FORMAT_WITH_MS_LENGTH = 24;
+//	private static final int DATE_FORMAT_WITH_MS_LENGTH = 29;				//edit by si.
 
 
 	Gson gsonSerialize;

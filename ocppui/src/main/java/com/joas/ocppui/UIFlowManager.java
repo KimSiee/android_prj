@@ -426,6 +426,9 @@ public class UIFlowManager implements RfidReaderListener, DSPControl2Listener, O
         unplugTimerCnt = 0;
         finishWaitCnt = 0;
 
+        chargeData.connectorType = TypeDefine.ConnectorType.CTYPE;
+        dspControl.setConnectorSelect(chargeData.dspChannel, DSPTxData2.CHARGER_SELECT_SLOW_CTYPE);
+
 //        if(mconfig.lcdType.equals("None")) rfidReader.rfidReadRelease();
 //        else rfidReader.rfidReadRequest();
 
@@ -617,9 +620,11 @@ public class UIFlowManager implements RfidReaderListener, DSPControl2Listener, O
                 }
                 else{
                     if ( tagNum.equals(lastCardNum) || chargeData.startransaction_parentID.equals(chargeData.pidNum) ) {
-                        if(chargeData.startransaction_parentID.equals(chargeData.pidNum)){
-                            OCPPSession session = ocppSessionManager.getOcppSesstion(chargeData.curConnectorId);
-                            session.setAuthTag(tagNum);
+                        if(chargeData.startransaction_parentID!=null && chargeData.pidNum!=null){
+                            if(chargeData.startransaction_parentID.equals(chargeData.pidNum)){
+                                OCPPSession session = ocppSessionManager.getOcppSesstion(chargeData.curConnectorId);
+                                session.setAuthTag(tagNum);
+                            }
                         }
                         LogWrapper.v(TAG, "Stop by User Card Tag");
                         isStopByCard = true;
@@ -780,7 +785,11 @@ public class UIFlowManager implements RfidReaderListener, DSPControl2Listener, O
             // 충전 관련 변수를 초기화 한다.
             initChargingStartValue();
 
-            // 통신으로 충전시작 메시지를 보낸다.
+//            // 통신으로 충전시작 메시지를 보낸다.
+//            try {
+//                Thread.sleep(5000);
+//            } catch (InterruptedException e) {
+//            }
             ocppSessionManager.startCharging(chargeData.curConnectorId, (int)lastMeterValue);
 
             setUIFlowState(UIFlowState.UI_CHARGING);
@@ -832,8 +841,6 @@ public class UIFlowManager implements RfidReaderListener, DSPControl2Listener, O
             trans.removeSaveTransactionMessage(trans.getLastUniqeId_Stoptransaction());
 
 
-            // 커넥터 상태를 충전 종료중으로 바꾼다.(Status 메시지 보냄)
-            setOcppStatus(chargeData.curConnectorId, StatusNotification.Status.FINISHING);
 
             DSPRxData2 rxData = dspControl.getDspRxData2(chargeData.dspChannel);
             sendOcppMeterValues(rxData, SampledValue.Context.TRANSACTION_END, true);
@@ -854,6 +861,10 @@ public class UIFlowManager implements RfidReaderListener, DSPControl2Listener, O
 
             dispMeteringString(new String[]{"Finished.", "Unplug Cable",
                     String.format("Usage:%.2f kWh", (double)(chargeData.measureWh / 1000.0))});
+
+
+//            // 커넥터 상태를 충전 종료중으로 바꾼다.(Status 메시지 보냄)
+//            setOcppStatus(chargeData.curConnectorId, StatusNotification.Status.FINISHING);
         }
         mainActivity.setRemoteStartedVisible(View.INVISIBLE);
     }
@@ -1119,7 +1130,7 @@ public class UIFlowManager implements RfidReaderListener, DSPControl2Listener, O
 
             //충전중 커넥터 제거시 종료사유 추가
             if(isDspPlug == false){
-                if(chargeData.ocppStatus!=StatusNotification.Status.SUSPENDED_EVSE && finishWaitCnt == 0){
+                if(chargeData.ocppStatus!=StatusNotification.Status.SUSPENDED_EV && finishWaitCnt == 0){
                     stopReason = StopTransaction.Reason.EV_DISCONNECTED;
                 }
             }
@@ -1131,7 +1142,7 @@ public class UIFlowManager implements RfidReaderListener, DSPControl2Listener, O
         if(getUIFlowState() == UIFlowState.UI_CHARGING){
             if(isDspPlug == false && stopReason == StopTransaction.Reason.EV_DISCONNECTED){
                 if(finishWaitCnt == TypeDefine.SUSPENDED_EVSE_CHECK_TIMEOUT){
-                    setOcppStatus(chargeData.curConnectorId, StatusNotification.Status.SUSPENDED_EVSE);
+                    setOcppStatus(chargeData.curConnectorId, StatusNotification.Status.SUSPENDED_EV);
                     isStopbySuspendedEVSE = true;
                     isStopByCard = false;
                     isStopByStartTransactionInvalid = false;
@@ -1182,6 +1193,8 @@ public class UIFlowManager implements RfidReaderListener, DSPControl2Listener, O
             // 5초이상 Gap을 준다.(MC 융착을 피하기 위함)
 //            if (unplugTimerCnt++> 5 && rxData.get400Reg(DSPRxData2.STATUS400.STATE_PLUG) == false) {
             if (unplugTimerCnt++> 5 && isDspPlug == false) {
+                // 커넥터 상태를 충전 종료중으로 바꾼다.(Status 메시지 보냄)
+                setOcppStatus(chargeData.curConnectorId, StatusNotification.Status.FINISHING);
                 onPageCommonEvent(PageEvent.GO_HOME);
             }
         }
@@ -2092,15 +2105,16 @@ public class UIFlowManager implements RfidReaderListener, DSPControl2Listener, O
      */
     public void onStartTransactionResult(int connectorId, IdTagInfo tagInfo) {
         if (chargeData.curConnectorId == connectorId) {
+            setOcppStatus(chargeData.curConnectorId, StatusNotification.Status.CHARGING);
             if (  flowState == UIFlowState.UI_CHARGING ) {
                 if ( tagInfo.getStatus() == IdTagInfo.Status.ACCEPTED ) {
                     // 커넥터 상태를 충전중으로 바꾼다.(Status 메시지 보냄)
-                    setOcppStatus(chargeData.curConnectorId, StatusNotification.Status.CHARGING);
+//                    setOcppStatus(chargeData.curConnectorId, StatusNotification.Status.CHARGING);
                     chargeData.startransaction_parentID = tagInfo.getParentIdTag();
                 }
                 else {
                     // 커넥터 상태를 SUSPENDED_EVSE 로 바꾸고 충전을 중지한다.
-                    setOcppStatus(chargeData.curConnectorId, StatusNotification.Status.SUSPENDED_EVSE);
+                    setOcppStatus(chargeData.curConnectorId, StatusNotification.Status.SUSPENDED_EV);
 
                     OCPPConfiguration ocppConfiguration = ocppSessionManager.getOcppConfiguration();
                     // 만약 StopTransactionOnInvalidId 가 true 이면 충전을 중지한다.

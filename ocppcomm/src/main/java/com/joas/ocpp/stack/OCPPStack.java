@@ -332,7 +332,8 @@ public class OCPPStack implements TransceiverListener{
 
 	public void sendDataTransferRequest(String data){
 		DataTransfer dataTransfer = new DataTransfer();
-		dataTransfer.setVendorId("joas");
+		dataTransfer.setVendorId("kr.co,joas.wwww");
+		dataTransfer.setMessageId("unitpricereq");
 		dataTransfer.setData(data);
 
 		OCPPMessage message = new OCPPMessage("DataTransfer",dataTransfer);
@@ -724,17 +725,19 @@ public class OCPPStack implements TransceiverListener{
 	boolean onChangeConfiguration(ChangeConfiguration changeConfiguration) {
 		boolean ret = true;
 
-		if ( changeConfiguration.getKey().equals("HeartbeatInterval") ) {
+		if (changeConfiguration.getKey().equals("HeartbeatInterval")) {
 			changeHeartbeatInterval(Integer.parseInt(changeConfiguration.getValue()));
-		}
-		else if ( changeConfiguration.getKey().equals("HeartbeatInterval") ) {
+		} else if (changeConfiguration.getKey().equals("HeartbeatInterval")) {
 			int interval = Integer.parseInt(changeConfiguration.getValue());
-			if ( interval < 0 ) ret = false;
+			if (interval < 0) ret = false;
 			else {
-				if ( transport instanceof TransportWebSocket ) {
+				if (transport instanceof TransportWebSocket) {
 					((TransportWebSocket) transport).setPingInterval(interval);
 				}
 			}
+		} else if (changeConfiguration.getKey().equals("MeterValueSampleInterval")) {
+			int interval = Integer.parseInt(changeConfiguration.getValue());
+			if (interval < 0) ret = false;
 		}
 		return ret;
 	}
@@ -775,8 +778,13 @@ public class OCPPStack implements TransceiverListener{
 	}
 
 	void onDataTransferRequest(OCPPMessage message) {
+		DataTransfer req = (DataTransfer) message.getPayload();
 		DataTransferResponse response = new DataTransferResponse();
-		response.setStatus(DataTransferResponse.Status.ACCEPTED);
+
+		if (!req.getVendorId().equals("JOAS") || !req.getMessageId().equals("JOAS")) {
+			response.setStatus(DataTransferResponse.Status.REJECTED);
+		} else response.setStatus(DataTransferResponse.Status.ACCEPTED);
+
 		sendResponse(message, response);
 	}
 

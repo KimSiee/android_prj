@@ -101,10 +101,12 @@ public class OCPPSession {
                     }
                 }
                 else{
+//                    if ( manager.getListener() != null ) manager.getListener().onAuthSuccess(connectorId);
                     if(authTag.equals(lastAuthTag)){
                         if ( manager.getListener() != null ) manager.getListener().onAuthSuccess(connectorId);
                     }
                     else {
+                        authTag = lastAuthTag;
                         if (manager.getListener() != null)
                             manager.getListener().onAuthFailed(connectorId);
                     }

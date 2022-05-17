@@ -149,7 +149,9 @@ public class PageManger {
             changePage(PageID.SELECT_FAST);
         }
         else {
-            changePage(PageID.SELECT_SLOW);
+            if(flowManager.mconfig.equals("None")) changePage(PageID.SELECT_SLOW);
+            else changePage(PageID.CARD_TAG);
+
         }
     }
 

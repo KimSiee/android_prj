@@ -24,8 +24,8 @@ import com.joas.hw.dsp2.DSPControl2Listener;
 import com.joas.hw.dsp2.DSPRxData2;
 import com.joas.hw.dsp2.DSPTxData2;
 import com.joas.hw.rfid.RfidReader;
-import com.joas.hw.rfid.RfidReaderACM1281S;
 import com.joas.hw.rfid.RfidReaderListener;
+import com.joas.hw.rfid.RfidReaderSehan;
 import com.joas.metercertviewer.IMeterAidlInterface;
 import com.joas.ocpp.chargepoint.OCPPSession;
 import com.joas.ocpp.chargepoint.OCPPSessionManager;
@@ -48,7 +48,6 @@ import com.joas.ocpp.stack.OCPPMessage;
 import com.joas.ocpp.stack.OCPPStackProperty;
 import com.joas.ocpp.stack.OCPPTransportMonitorListener;
 import com.joas.ocpp.stack.Transceiver;
-import com.joas.ocppui_tardis.R;
 import com.joas.ocppui_tardis.page.PageEvent;
 import com.joas.ocppui_tardis.page.PageID;
 import com.joas.utils.LogWrapper;
@@ -176,10 +175,10 @@ public class UIFlowManager implements RfidReaderListener, DSPControl2Listener, O
         dspControl.setMeterUse(false);
         dspControl.start();
 
-        rfidReader = new RfidReaderACM1281S("/dev/ttyS3", RfidReaderACM1281S.RFID_CMD.RFID_TMONEY);
+//        rfidReader = new RfidReaderACM1281S("/dev/ttyS3", RfidReaderACM1281S.RFID_CMD.RFID_TMONEY);
 //        rfidReader = new RfidReaderACM1281S("/dev/ttyS3", RfidReaderACM1281S.RFID_CMD.RFID_MYFARE);
 
-//        rfidReader = new RfidReaderSehan("/dev/ttyS3", RfidReaderSehan.RFID_CMD.RFID_AUTO_TMONEY);
+        rfidReader = new RfidReaderSehan("/dev/ttyS3", RfidReaderSehan.RFID_CMD.RFID_AUTO_TMONEY);
 //        rfidReader = new RfidReaderSehan("/dev/ttyS3", RfidReaderSehan.RFID_CMD.RFID_AUTO_MYFARE);
         rfidReader.setRfidReaderEvent(this);
         rfidReader.rfidReadRequest();
@@ -603,7 +602,7 @@ public class UIFlowManager implements RfidReaderListener, DSPControl2Listener, O
 
                 }
             } else if (flowState == UIFlowState.UI_CHARGING) {
-                if(chargeData.serverStat){
+                if(chargeData.serverStat && !lastCardNum.equals(tagNum)){
                     ocppSessionManager.authorizeRequest(chargeData.curConnectorId, tagNum);
                 }
                 else{
